@@ -1,1 +1,2 @@
-This line is added while creating the file -> file1.txt
+This   line is added while creating the file & edited using name for save ^O & then press enter to confirm the file name & for exit ^X -> file1.txt
+Add new line 1
