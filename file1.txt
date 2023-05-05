@@ -2,3 +2,4 @@ This   line is added while creating the file & edited using name for save ^O & t
 Add new line 1
 Add new line 2 to the file1.txt
 Add new line 3 to the file1.txt while i am in akshith/Feature-1 branch.
+Add new line 4 to the file1.txt while i am in akshith/Feature-1 branch.
