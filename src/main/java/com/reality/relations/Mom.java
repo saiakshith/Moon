@@ -1,4 +1,4 @@
 package com.reality.relations;
 
-public class Mom {
+public class Mom extends Parent {
 }
