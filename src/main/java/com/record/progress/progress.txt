@@ -1,3 +1,4 @@
 Parent class
     1. merged feature/akshith/life-relations into release/enh-life
+    2. merged release/enh-life into feature/satish/life-creating-conflicts -> resolved LifeTest Conflicts
 
