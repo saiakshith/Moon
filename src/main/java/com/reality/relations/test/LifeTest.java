@@ -8,5 +8,7 @@ public class LifeTest {
         System.out.println("hello world 4");
 
 
+        System.out.println("hello world 5");
+        System.out.println("hello world 6");
     }
 }
