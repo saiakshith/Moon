@@ -8,5 +8,7 @@ public class LifeTest {
 
         System.out.println("Print statement added by AKSHITH from GITHUB.");
 
+        System.out.println("Commit single file 1");
+
     }
 }
