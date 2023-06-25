@@ -10,6 +10,6 @@ public class LifeTest {
 
         System.out.println("Commit single file 1");
 
-        System.out.println("Commit single file 2");
+        System.out.println("Commit single file 3");
     }
 }
