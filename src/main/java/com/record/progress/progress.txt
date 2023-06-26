@@ -1,10 +1,4 @@
 Parent class
     1. merged feature/akshith/life-relations into release/enh-life
     2. merged release/enh-life into feature/satish/life-creating-conflicts -> resolved LifeTest Conflicts
-    3. New line 3 add from GITHUB by AKSHITH, added from branch feature/akshith/tests-creating-conflicts.
-    3. New line 3 add from GITHUB by AKSHITH, an extra addition from github to the same line.
-
-From feature/akshith/tests-creating-conflicts branch,z this line is added form intellij GIT, to create conflicts while merging
-release/enh-tests into feature/akshith/tests-creating-conflicts.
-
-Added this line directly from github.
+    3. New line 3 add from GITHUB by AKSHITH, FORM GITHUB.
