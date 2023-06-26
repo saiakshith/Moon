@@ -9,8 +9,10 @@ public class LifeTest {
 
         System.out.println("Print statement added, FROM GITHUB, another change FORM INTELLIJ");
 
-        System.out.println("Print statement added, FROM GITHUB, another change FROM GITHUB");
+        System.out.println("Print statement added, FROM GITHUB, ANOTHER CONFLICT FROM GITHUB");
 
         System.out.println("Commit single file 1");
+
+        System.out.println("NEW LINE WITH NO CONFLICT FROM GITHUB");
     }
 }
