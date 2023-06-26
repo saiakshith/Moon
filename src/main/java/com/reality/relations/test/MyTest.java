@@ -5,5 +5,7 @@ public class MyTest {
         System.out.println("hello world 1, this is to create a conflict in feature/akshith/tests-creating-conflicts branch, while merging release/enh-tests");
 
         System.out.println("Commit single file 2, FROM INTELLIJ");
+
+        System.out.println("Commit single file 2, FROM GITHUB");
     }
 }
