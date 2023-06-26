@@ -7,5 +7,7 @@ public class MyTest {
         System.out.println("Commit single file 2, FROM INTELLIJ");
 
         System.out.println("Commit single file 2, FROM GITHUB");
+
+        System.out.println("Yet another line FROM GITHUB WITHOUT CONFLICT");
     }
 }
