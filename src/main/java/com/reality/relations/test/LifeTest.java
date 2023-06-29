@@ -15,6 +15,8 @@ public class LifeTest {
 
         System.out.println("Line added in f/a/tests-rebase, commit-3");
 
-        System.out.println("Line added in f/a/tests-rebase, commit-3");
+        System.out.println("Line added in f/a/tests-rebase, commit-4");
+
+        System.out.println("Line added in f/a/tests-rebase, commit-5");
     }
 }
