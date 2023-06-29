@@ -9,7 +9,11 @@ public class LifeTest {
 
         System.out.println("Line added in, release/enh-tests, commit-2");
 
+        System.out.println("Line added in f/a/tests-rebase, commit-1");
+
         System.out.println("Line added in f/a/tests-rebase, commit-2");
+
+        System.out.println("Line added in f/a/tests-rebase, commit-3");
 
         System.out.println("Line added in f/a/tests-rebase, commit-3");
     }
