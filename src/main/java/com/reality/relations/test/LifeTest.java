@@ -5,18 +5,7 @@ public class LifeTest {
 
         System.out.println("This line is added from local in intellij by akshith");
 
-        System.out.println("Line added in, release/enh-tests, commit-1");
-
-        System.out.println("Line added in, release/enh-tests, commit-2");
-
         System.out.println("Line added in f/a/tests-rebase, commit-1");
-
-        System.out.println("Line added in f/a/tests-rebase, commit-2");
-
-        System.out.println("Line added in f/a/tests-rebase, commit-3");
-
-        System.out.println("Line added in f/a/tests-rebase, commit-4");
-
-        System.out.println("Line added in f/a/tests-rebase, commit-5");
+        
     }
 }
