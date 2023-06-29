@@ -5,12 +5,6 @@ public class LifeTest {
 
         System.out.println("This line is added from local in intellij by akshith");
 
-        System.out.println("Print statement added, FROM INTELLIJ");
-
-        System.out.println("Print statement added, FROM GITHUB, ANOTHER CONFLICT FROM GITHUB");
-
-        System.out.println("Commit single file 1");
-
-        System.out.println("NEW LINE WITH NO CONFLICT FROM GITHUB");
+        System.out.println("Line added in, release/enh-tests, commit-1");
     }
 }
