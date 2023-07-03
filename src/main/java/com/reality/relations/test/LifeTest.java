@@ -5,5 +5,7 @@ public class LifeTest {
 
         System.out.println("New line added, FROM INTELLIJ");
 
+        System.out.println("New line added, FROM GITHUB");
+
     }
 }
