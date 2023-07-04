@@ -5,7 +5,6 @@ public class LifeTest {
 
 
 
-
 //        Impex for NotificationContent & EmailPage
         System.out.println("New line added, FROM INTELLIJ");
 

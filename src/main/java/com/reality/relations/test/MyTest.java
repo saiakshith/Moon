@@ -6,6 +6,8 @@ public class MyTest {
         System.out.println("Yet another line FROM GITHUB WITHOUT CONFLICT");
 
         System.out.println("New line, FROM GITHUB");
+
+        System.out.println("Yet another new line, FROM GITHUB");
         
     }
 }
