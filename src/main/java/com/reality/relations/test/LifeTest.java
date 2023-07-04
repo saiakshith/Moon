@@ -5,5 +5,7 @@ public class LifeTest {
 
         System.out.println("New line added, FROM GITHUB, this addition is to create conflict FROM GITHUB");
 
+        System.out.println("New line added, FROM GITHUB, this addition is to create conflict FROM GITHUB");
+
     }
 }
