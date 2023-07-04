@@ -7,7 +7,7 @@ public class MyTest {
 
         System.out.println("New line, FROM GITHUB");
 
-        System.out.println("Yet another new line, FROM GITHUB, to give a space after");
+        System.out.println("Yet another new line, FROM GITHUB, space after this statement");
         
     }
 }
