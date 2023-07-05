@@ -3,7 +3,10 @@ package com.reality.relations.test;
 public class LifeTest {
     public static void main(String[] args) {
 
-        System.out.println("New line added, FROM GITHUB, this addition is to create conflict FROM GITHUB");
+// some code 
 
+        System.out.println("New line of code");
+        
+        System.out.println("New line added, FROM INTELLIJ");
     }
 }
