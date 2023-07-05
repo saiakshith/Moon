@@ -1,5 +1,5 @@
 Parent class
     1. merged feature/akshith/life-relations into release/enh-life
     2. merged release/enh-life into feature/satish/life-creating-conflicts -> resolved LifeTest Conflicts
-    2. Updated progress.txt & LifeTest class by akshith.
-
+    3. New line 3 add from GITHUB by AKSHITH, FROM INTELLIJ.
+    3. New line 3 add from GITHUB by AKSHITH, FORM GITHUB.
