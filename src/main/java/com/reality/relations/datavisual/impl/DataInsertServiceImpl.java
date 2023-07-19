@@ -6,5 +6,6 @@ public class DataInsertServiceImpl implements DataInsertService {
     @Override
     public void getdata() {
         System.out.println("Akshith");
+        System.out.println("Akshith 2");
     }
 }
