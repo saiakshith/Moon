@@ -1,9 +1,20 @@
 package com.reality.relations.test;
 
+import org.apache.commons.codec.binary.StringUtils;
+import org.apache.commons.lang.BooleanUtils;
+
+import javax.sql.rowset.serial.SQLOutputImpl;
+import java.util.HashMap;
+import java.util.Map;
+
 public class LifeTest {
     public static void main(String[] args) {
-
-        System.out.println("New line added, FROM GITHUB, this addition is to create conflict FROM GITHUB");
-
+        
+        Map<String, String> map = new HashMap<>();
+        map.put("me", "y");
+        
+        
+        System.out.println(BooleanUtils.toBoolean(map.get("me")));
     }
+    
 }
