@@ -7,5 +7,6 @@ public class DataInsertServiceImpl implements DataInsertService {
     public void getdata() {
         System.out.println("Akshith");
         System.out.println("Akshith 2");
+        System.out.println("Akshith 2");
     }
 }
