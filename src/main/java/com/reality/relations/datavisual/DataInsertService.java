@@ -1,4 +1,5 @@
 package com.reality.relations.datavisual;
 
-public class DataInsertService {
+public interface DataInsertService {
+    void getdata();
 }
