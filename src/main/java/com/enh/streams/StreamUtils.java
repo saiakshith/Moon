@@ -14,7 +14,11 @@ import java.util.List;
 
 public class StreamUtils {
 
-    public static List<Integer> getRandomNumbers() {
+    public static List<Integer> getEmptyIntegerList() {
+        return List.of();
+    } 
+    
+    public static List<Integer> getRandomIntegers() {
         return List.of(23, 34, 87, 55, 67, 98, 39, 72, 11, 29);
     }  
     
