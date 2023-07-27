@@ -24,6 +24,15 @@ public class Product {
         this.arrival = arrival;
     }
 
+    public Product(String code, String name, String description, BigDecimal price, boolean isSellable, Arrival arrival) {
+        this.code = code;
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.isSellable = isSellable;
+        this.arrival = arrival;
+    }
+
     @Override
     public String toString() {
         return "Product{" +

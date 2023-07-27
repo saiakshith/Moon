@@ -1,6 +1,8 @@
 package com.enh.streams.data;
 
+import com.enh.streams.enums.Department;
 import com.enh.streams.enums.Gender;
+import com.enh.streams.enums.Role;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -9,13 +11,13 @@ public class Employee {
     private String id;
     private String name;
     private int age;
-    private String role;
+    private Role role;
     private BigDecimal salary;
     private Gender gender;
-    private List<String> departments;
+    private List<Department> departments;
     private boolean isAdmin;
 
-    public Employee(String id, String name, int age, String role, BigDecimal salary, Gender gender, List<String> departments, boolean isAdmin) {
+    public Employee(String id, String name, int age, Role role, BigDecimal salary, Gender gender, List<Department> departments, boolean isAdmin) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -64,11 +66,11 @@ public class Employee {
         this.age = age;
     }
 
-    public String getRole() {
+    public Role getRole() {
         return role;
     }
 
-    public void setRole(String role) {
+    public void setRole(Role role) {
         this.role = role;
     }
 
@@ -88,11 +90,11 @@ public class Employee {
         this.gender = gender;
     }
 
-    public List<String> getDepartments() {
+    public List<Department> getDepartments() {
         return departments;
     }
 
-    public void setDepartments(List<String> departments) {
+    public void setDepartments(List<Department> departments) {
         this.departments = departments;
     }
 
