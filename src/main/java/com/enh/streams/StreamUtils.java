@@ -12,8 +12,28 @@ import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.List;
 
-public class CommontUtils {
+public class StreamUtils {
 
+    public static List<Integer> getRandomNumbers() {
+        return List.of(23, 34, 87, 55, 67, 98, 39, 72, 11, 29);
+    }  
+    
+    public static List<Integer> getOrderedNumbers() {
+        return List.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+    }
+    
+    public static List<Double> getRandomDoubles() {
+        return List.of(23.4, 44.8, 72.5, 13.5, 90.5, 8.4, 81.9);
+    } 
+    
+    public static List<Double> getOrderedDoubles() {
+        return List.of(1.0, 2.0, 3.0, 4.0, 5.0);
+    }
+    
+    public static List<String> getStrings() {
+        return List.of("String-1", "String-2", "String-3");
+    }
+    
     public static List<Person> createPersons() {
         return List.of(
                 new Person("Agastya", 47, Gender.MALE, false),
