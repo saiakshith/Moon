@@ -13,7 +13,7 @@ public class StreamsEx1 {
 //    a. Given a list of integers, filter out the even numbers and find their sum.
         System.out.println(
 //                CommontUtils.getOrderedNumbers().stream()
-                StreamUtils.getRandomNumbers().stream()
+                StreamUtils.getRandomIntegers().stream()
                         .filter(n -> n % 2 == 0)
                         .mapToInt(e -> e)
                         .sum()
@@ -52,24 +52,3 @@ public class StreamsEx1 {
         );
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
