@@ -81,7 +81,7 @@ public class StreamUtils {
         return List.of(
                 new Product("SG-22-101", "Samsung Galaxy S22", "Buy galaxy & change your life", new BigDecimal(17_000), true, Arrival.OLD),
                 new Product("TV-22-475", "Samsung TV 2", "Buy samsung tv & change your life", new BigDecimal(2_31_000), true, Arrival.OLD),
-                new Product("SGU-23-613", "Samsung S23 Ultra", "Buy galaxy ultra S23 & change your life", new BigDecimal(58_000), true, Arrival.NEW),
+                new Product("SGU-23-613", "Samsung S23 Ultra", "Buy galaxy ultra S23 & change your life", new BigDecimal(58_050), true, Arrival.NEW),
                 new Product("SG-23-213", "Samsung Galaxy S23", "Buy samsung S23 & change your life", new BigDecimal(23_000), true, Arrival.OLD),
                 new Product("ST-22-875", "Samsung Tab 2", "Buy samsung tab & change your life", new BigDecimal(78_000), true, Arrival.NEW),
                 new Product("STI-22-913", "Samsung Trade-In", "Buy samsung trade-in & change your life", new BigDecimal(9_000), true, Arrival.NEW),

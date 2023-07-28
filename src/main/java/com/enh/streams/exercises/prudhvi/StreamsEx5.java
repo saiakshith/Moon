@@ -25,8 +25,7 @@ public static void main(String[] args) {
 //    c. Given a list of Person objects, sort them based on a specific property and print the sorted list.
     System.out.println(
             StreamUtils.createPersons().stream()
-                    .map(Person::getName)
-                    .sorted()
+                    .sorted((a,b) -> Integer.compare(a.getAge(), b.getAge()))
                     .collect(Collectors.toList())
     );
 }
