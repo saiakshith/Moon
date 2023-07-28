@@ -33,7 +33,10 @@ public class StreamUtils {
     public static List<String> getStrings() {
         return List.of("String-1", "String-2", "String-3");
     }
-    
+     public static List<String> strings() {
+        return List.of("CString-1", "AString-2", "BString-3");
+    }
+
     public static List<Person> createPersons() {
         return List.of(
                 new Person("Agastya", 47, Gender.MALE, false),
