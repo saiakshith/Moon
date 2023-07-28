@@ -1,11 +1,11 @@
-package com.enh.streams.exercises;
+package com.enh.streams.exercises.prudhvi;
 
 import com.enh.streams.StreamUtils;
 import com.enh.streams.data.Person;
 
 import java.util.stream.Collectors;
 
-public class StreamsEx6 {
+public class StreamsEx5 {
 
 //    Sorting:
 public static void main(String[] args) {
@@ -18,7 +18,7 @@ public static void main(String[] args) {
 
 //    b. Given a list of integers, sort them in descending order and print the sorted list.
     System.out.println(
-            StreamUtils.getRandomNumbers().stream()
+            StreamUtils.getRandomIntegers().stream()
                     .sorted().collect(Collectors.toList())
     );
 

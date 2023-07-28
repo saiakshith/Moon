@@ -1,11 +1,11 @@
-package com.enh.streams.exercises;
+package com.enh.streams.exercises.prudhvi;
 
 import com.enh.streams.StreamUtils;
 
 import java.math.BigDecimal;
 import java.util.stream.Collectors;
 
-public class StreamEx7 {
+public class StreamsEx6 {
 
 //    Reduction:
 public static void main(String[] args) {

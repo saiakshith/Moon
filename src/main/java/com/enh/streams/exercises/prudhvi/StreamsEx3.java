@@ -1,4 +1,4 @@
-package com.enh.streams.exercises;
+package com.enh.streams.exercises.prudhvi;
 
 import com.enh.streams.StreamUtils;
 import com.enh.streams.data.Product;

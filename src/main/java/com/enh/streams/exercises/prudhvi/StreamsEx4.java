@@ -1,12 +1,11 @@
-package com.enh.streams.exercises;
+package com.enh.streams.exercises.prudhvi;
 
 import com.enh.streams.StreamUtils;
 import com.enh.streams.data.Person;
 
-import java.util.Arrays;
 import java.util.stream.Collectors;
 
-public class StreamsEx5 {
+public class StreamsEx4 {
 
 //    Mapping:
 
