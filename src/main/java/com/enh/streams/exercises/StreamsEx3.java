@@ -22,7 +22,7 @@ public class StreamsEx3 {
         
 //        c. Concatenate a list of strings using reduce operation.
         System.out.println(
-                StreamUtils.getStrings().stream()
+                StreamUtils.createStringsList().stream()
                         .reduce("", (a, cs) -> a.concat(cs))
         );
         

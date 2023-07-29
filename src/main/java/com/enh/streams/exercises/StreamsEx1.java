@@ -21,7 +21,7 @@ public class StreamsEx1 {
         
 //    b. Convert a list of strings to uppercase and concatenate them into a single string.
         System.out.println(
-                StreamUtils.getStrings().stream()
+                StreamUtils.createStringsList().stream()
                         .map(s -> s.toUpperCase())
                         .reduce("", (a, cs) -> a.concat(cs)) // a - "", cs - Current String
         );

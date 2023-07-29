@@ -11,6 +11,7 @@ import com.enh.streams.enums.Role;
 import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 public class StreamUtils {
 
@@ -34,8 +35,12 @@ public class StreamUtils {
         return List.of(1.0, 2.0, 3.0, 4.0, 5.0);
     }
     
-    public static List<String> getStrings() {
-        return List.of("String-1", "String-2", "String-3");
+    public static List<String> createStringsList() {
+        return Arrays.asList("String-2", null, "String-3", null, "String-1");
+    }
+    
+    public static List<Optional> createOptionalsList() {
+        return Arrays.asList(Optional.ofNullable(2), Optional.ofNullable(null), Optional.ofNullable(3), Optional.ofNullable(null), Optional.ofNullable(1));
     }
     
     public static List<Person> createPersons() {
