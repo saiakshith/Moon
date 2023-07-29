@@ -22,8 +22,8 @@ public class StreamUtils {
         return List.of(23, 34, 87, 55, 67, 98, 39, 72, 11, 29);
     }  
     
-    public static List<Integer> getOrderedNumbers() {
-        return List.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+    public static List<Integer> getOrderedIntegers() {
+        return List.of(0, 1, 2, 3, 4, 5);
     }
     
     public static List<Double> getRandomDoubles() {

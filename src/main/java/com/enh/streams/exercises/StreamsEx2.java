@@ -28,7 +28,7 @@ public class StreamsEx2 {
         
 //    c. Transform a list of integers into their squares using map operation.
         System.out.println(
-                StreamUtils.getOrderedNumbers().stream()
+                StreamUtils.getOrderedIntegers().stream()
                         .map(Math::sqrt)
                         .collect(Collectors.toList())
         );
