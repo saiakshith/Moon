@@ -15,6 +15,19 @@ public class Product {
     private boolean isSellable;
     private Arrival arrival;
     private Brand brand;
+    private int sold;
+
+    public Product(String code, String name, String description, BigDecimal price, List<Product> productReferences, boolean isSellable, Arrival arrival, Brand brand, int sold) {
+        this.code = code;
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.productReferences = productReferences;
+        this.isSellable = isSellable;
+        this.arrival = arrival;
+        this.brand = brand;
+        this.sold = sold;
+    }
 
     public Product(String code, String name, String description, BigDecimal price, boolean isSellable, Arrival arrival, Brand brand) {
         this.code = code;
@@ -119,5 +132,13 @@ public class Product {
 
     public void setBrand(Brand brand) {
         this.brand = brand;
+    }
+
+    public int getSold() {
+        return sold;
+    }
+
+    public void setSold(int sold) {
+        this.sold = sold;
     }
 }
