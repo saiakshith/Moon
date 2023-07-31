@@ -1,4 +1,4 @@
-package com.enh.streams.exercises;
+package com.enh.streams.exercises.akshith.beginner;
 
 import com.enh.streams.StreamUtils;
 
