@@ -2,8 +2,14 @@ package com.enh.streams.exercises;
 
 
 import com.enh.streams.StreamUtils;
+import com.enh.streams.data.Person;
+import com.enh.streams.data.Product;
+import org.apache.commons.lang3.StringUtils;
 
+import java.math.BigDecimal;
 import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.toList;
 
 public class StreamsEx1 {
 
@@ -21,9 +27,10 @@ public class StreamsEx1 {
         
 //    b. Convert a list of strings to uppercase and concatenate them into a single string.
         System.out.println(
-                StreamUtils.createStringsList().stream()
-                        .map(s -> s.toUpperCase())
-                        .reduce("", (a, cs) -> a.concat(cs)) // a - "", cs - Current String
+                StreamUtils.getStringsList().stream()
+                        .filter(StringUtils::isNoneBlank)
+                        .map(String::toUpperCase)
+                        .reduce("", String::concat) // identity - "", accumulator(a) - "", cs - Current String
         );
         
 //    c. Find the average of a list of doubles using streams.
@@ -33,22 +40,15 @@ public class StreamsEx1 {
                         .mapToDouble(d -> d)
                         .sum() / StreamUtils.getOrderedDoubles().size()
         );
-
-        System.out.println(
-                StreamUtils.createProducts().stream()
-                        .map(p -> p.getPrice())
-                        .mapToInt(price -> price.intValue())
-                        .sum()
-        );
         
 //    d. Given a list of strings, filter out the ones that start with a specific letter.
         System.out.println(
-                StreamUtils.createPersons().stream()
+                StreamUtils.getPersons().stream()
                         .filter(p -> p.getName().startsWith("T"))
-//                        .map(p -> p.getName())
+//                        .map(Person::getName)
 //                        .filter(n -> n.startsWith("T"))
 //                        .filter(n -> !n.contains(" "))   
-                        .collect(Collectors.toList())
+                        .collect(toList())
         );
     }
 }

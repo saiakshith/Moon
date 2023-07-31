@@ -35,15 +35,19 @@ public class StreamUtils {
         return List.of(1.0, 2.0, 3.0, 4.0, 5.0);
     }
     
-    public static List<String> createStringsList() {
+    public static List<String> getStringsList() {
         return Arrays.asList("String-2", null, "String-3", null, "String-1");
     }
     
-    public static List<Optional> createOptionalsList() {
+    public static List<String> getSentencesList() {
+        return List.of("I’m begging you, don’t make me a killer!", "The pain you feel today will be the strength you’ll have tomorrow.");
+    }
+    
+    public static List<Optional> getOptionalsList() {
         return Arrays.asList(Optional.ofNullable(2), Optional.ofNullable(null), Optional.ofNullable(3), Optional.ofNullable(null), Optional.ofNullable(1));
     }
     
-    public static List<Person> createPersons() {
+    public static List<Person> getPersons() {
         return List.of(
                 new Person("Agastya", 47, Gender.MALE, false),
                 new Person("Muichiro", 13, Gender.MALE, true),
@@ -61,7 +65,7 @@ public class StreamUtils {
         );
     }
     
-    public static List<Employee> createEmployees() {
+    public static List<Employee> getEmployees() {
         return List.of(
                 new Employee("G-0305", "Sai Akshith", 25, Role.SAP_BACKEND_DEV, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.TECH_DESIGN, Department.FEATURE_TESTING), false),
                 new Employee("G-0361", "Akanksha", 134, Role.SAP_QA_TESTER, new BigDecimal(25_000), Gender.FEMALE, Arrays.asList(Department.TESTING), true),
@@ -82,7 +86,7 @@ public class StreamUtils {
         );
     }
     
-    public static List<Product> createProducts() {
+    public static List<Product> getProducts() {
         return List.of(
                 new Product("SG-22-101", "Samsung Galaxy S22", "Buy galaxy & change your life", new BigDecimal(17_000), true, Arrival.OLD),
                 new Product("TV-22-475", "Samsung TV 2", "Buy samsung tv & change your life", new BigDecimal(2_31_000), true, Arrival.OLD),

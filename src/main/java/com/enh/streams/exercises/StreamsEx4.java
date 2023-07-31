@@ -3,30 +3,31 @@ package com.enh.streams.exercises;
 import com.enh.streams.StreamUtils;
 import com.enh.streams.data.Person;
 
-import java.util.Comparator;
-import java.util.stream.Collectors;
+import static java.util.Comparator.comparingInt;
+import static java.util.stream.Collectors.groupingBy;
+import static java.util.stream.Collectors.toList;
 
 //    Sorting and Grouping:
 public class StreamsEx4 {
     public static void main(String[] args) {
 //    a. Sort a list of strings in alphabetical order using streams.
         System.out.println(
-                StreamUtils.createPersons().stream()
+                StreamUtils.getPersons().stream()
                         .map(Person::getName)
                         .sorted()
-                        .collect(Collectors.toList())
+                        .collect(toList())
         );
 
 //    b. Group a list of people by their age using Collectors.groupingBy.
         System.out.println(
-                StreamUtils.createPersons().stream()
-                        .collect(Collectors.groupingBy(Person::getAge))
+                StreamUtils.getPersons().stream()
+                        .collect(groupingBy(Person::getAge))
         );
 
 //    c. Find the oldest person in a list of Person objects.
         System.out.println(
-                StreamUtils.createPersons().stream()
-                        .max(Comparator.comparingInt(Person::getAge))
+                StreamUtils.getPersons().stream()
+                        .max(comparingInt(Person::getAge))
         );
     }
 }

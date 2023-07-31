@@ -2,6 +2,7 @@ package com.enh.streams.exercises;
 
 import com.enh.streams.StreamUtils;
 import com.enh.streams.data.Product;
+import org.apache.commons.lang3.StringUtils;
 
 //        Reduction and Aggregation:
 public class StreamsEx3 {
@@ -22,13 +23,14 @@ public class StreamsEx3 {
         
 //        c. Concatenate a list of strings using reduce operation.
         System.out.println(
-                StreamUtils.createStringsList().stream()
-                        .reduce("", (a, cs) -> a.concat(cs))
+                StreamUtils.getStringsList().stream()
+                        .filter(StringUtils::isNoneBlank)
+                        .reduce("", String::concat)
         );
         
 //        d. Count the number of occurrences of a specific word in a list of strings.
         System.out.println(
-                StreamUtils.createProducts().stream()
+                StreamUtils.getProducts().stream()
                         .map(Product::getDescription)
                         .filter(d -> d.contains("galaxy"))
                         .count()
