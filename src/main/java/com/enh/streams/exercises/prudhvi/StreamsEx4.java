@@ -1,34 +1,33 @@
 package com.enh.streams.exercises.prudhvi;
 
 import com.enh.streams.StreamUtils;
-import com.enh.streams.data.Person;
+import com.enh.streams.data.Product;
 
 import java.util.stream.Collectors;
 
 public class StreamsEx4 {
 
-//    Mapping:
-
+//    Collecting:
 public static void main(String[] args) {
-//    a. Given a list of strings, convert all the elements to uppercase and print the result.
+
+//    a. Given a list of strings, collect all the strings starting with a specific prefix into a new list.
     System.out.println(
-            StreamUtils.getStrings().stream()
-                    .map(a->a.toUpperCase())
+            StreamUtils.strings().stream()
+                    .filter(a->a.startsWith("A"))
                     .collect(Collectors.toList())
     );
 
-//    b. Given a list of integers, convert each number to its square and print the resulting list.
+//    b. Given a list of integers, collect all the even numbers into a new list.
     System.out.println(
-            StreamUtils.getOrderedNumbers().stream()
-                    .map(a->a*a)
+            StreamUtils.getRandomIntegers().stream()
+                    .filter(a -> a % 2 == 0)
                     .collect(Collectors.toList())
     );
 
-//    c. Given a list of objects, extract a specific property from each object and print it.
+//    c. Given a list of custom objects, collect them into a map based on a specific property.
     System.out.println(
-            StreamUtils.createPersons().stream()
-                    .map(Person::getName)
-                    .collect(Collectors.toList())
+            StreamUtils.createProducts().stream()
+                    .collect(Collectors.toMap(Product::getName, product -> product))
     );
 
 }

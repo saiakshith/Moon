@@ -1,32 +1,27 @@
 package com.enh.streams.exercises.prudhvi;
 
 import com.enh.streams.StreamUtils;
-import com.enh.streams.data.Person;
 
 import java.util.stream.Collectors;
 
 public class StreamsEx5 {
+//    Chaining:
+    public static void main(String[] args) {
+//    a. Given a list of strings, filter out the ones that contain a specific character, convert them to uppercase, and then print the result.
+        System.out.println(
+                StreamUtils.strings().stream()
+                        .filter(sc -> sc.contains("B"))
+                        .map(i -> i.toUpperCase())
+                        .collect(Collectors.toList())
+        );
+//    b. Given a list of integers, filter out the odd numbers, double the even numbers, and then print the resulting list.
+        System.out.println(
+                StreamUtils.getOrderedNumbers()
+                        .stream()
+                        .filter(en -> en%2 == 0)
+                        .map(d -> d * d)
+                        .collect(Collectors.toList())
+        );
 
-//    Sorting:
-public static void main(String[] args) {
-//    a. Given a list of strings, sort them in alphabetical order and print the sorted list.
-    System.out.println(
-            StreamUtils.strings().stream()
-                    .sorted()
-                    .collect(Collectors.toList())
-    );
-
-//    b. Given a list of integers, sort them in descending order and print the sorted list.
-    System.out.println(
-            StreamUtils.getRandomIntegers().stream()
-                    .sorted().collect(Collectors.toList())
-    );
-
-//    c. Given a list of Person objects, sort them based on a specific property and print the sorted list.
-    System.out.println(
-            StreamUtils.createPersons().stream()
-                    .sorted((a,b) -> Integer.compare(a.getAge(), b.getAge()))
-                    .collect(Collectors.toList())
-    );
-}
+    }
 }

@@ -3,34 +3,32 @@ package com.enh.streams.exercises.prudhvi;
 import com.enh.streams.StreamUtils;
 import com.enh.streams.data.Person;
 
-import java.util.List;
+import java.util.Comparator;
 import java.util.stream.Collectors;
 
-//    Mapping:
 public class StreamsEx2 {
-    public static void main(String[] args) {
-//    a. Convert a list of Person objects into a list of their corresponding names.
-        System.out.println(
-                StreamUtils.createPersons().stream()
-                        .map(Person::getName)
-                        .collect(Collectors.toList())
-        );      
-      
-//    b. Given a list of Strings, create a new list with each string's length.
-        System.out.println(
-                StreamUtils.createPersons().stream()
-                        .map(Person::getName)
-                        .map(String::length)
-//                        .map(n -> n.split(""))
-                        .map(List::of)
-                        .collect(Collectors.toList())
-        );
-        
-//    c. Transform a list of integers into their squares using map operation.
-        System.out.println(
-                StreamUtils.getOrderedNumbers().stream()
-                        .map(Math::sqrt)
-                        .collect(Collectors.toList())
-        );
-    }
+
+//    Sorting:
+public static void main(String[] args) {
+//    a. Given a list of strings, sort them in alphabetical order and print the sorted list.
+    System.out.println(
+            StreamUtils.strings().stream()
+                    .sorted()
+                    .collect(Collectors.toList())
+    );
+
+//    b. Given a list of integers, sort them in descending order and print the sorted list.
+    System.out.println(
+            StreamUtils.getRandomIntegers().stream()
+                    .sorted()
+                    .collect(Collectors.toList())
+    );
+
+//    c. Given a list of Person objects, sort them based on a specific property and print the sorted list.
+    System.out.println(
+            StreamUtils.createPersons().stream()
+                    .sorted(Comparator.comparingInt(Person::getAge))
+                    .collect(Collectors.toList())
+    );
+}
 }

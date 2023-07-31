@@ -1,54 +1,35 @@
 package com.enh.streams.exercises.prudhvi;
 
-
 import com.enh.streams.StreamUtils;
+import com.enh.streams.data.Person;
 
 import java.util.stream.Collectors;
 
 public class StreamsEx1 {
 
-//    Filtering and Transformation:
+//    Mapping:
 
-    public static void main(String[] args) {
-//    a. Given a list of integers, filter out the even numbers and find their sum.
-        System.out.println(
-//                CommontUtils.getOrderedNumbers().stream()
-                StreamUtils.getRandomIntegers().stream()
-                        .filter(n -> n % 2 == 0)
-                        .mapToInt(e -> e)
-                        .sum()
-        );
-        
-//    b. Convert a list of strings to uppercase and concatenate them into a single string.
-        System.out.println(
-                StreamUtils.getStrings().stream()
-                        .map(s -> s.toUpperCase())
-                        .reduce("", (a, cs) -> a.concat(cs)) // a - "", cs - Current String
-        );
-        
-//    c. Find the average of a list of doubles using streams.
-        System.out.println(
-//                CommontUtils.getOrderedDoubles().stream()
-                StreamUtils.getRandomDoubles().stream()
-                        .mapToDouble(d -> d)
-                        .sum() / StreamUtils.getOrderedDoubles().size()
-        );
+public static void main(String[] args) {
+//    a. Given a list of strings, convert all the elements to uppercase and print the result.
+    System.out.println(
+            StreamUtils.getStrings().stream()
+                    .map(a->a.toUpperCase())
+                    .collect(Collectors.toList())
+    );
 
-        System.out.println(
-                StreamUtils.createProducts().stream()
-                        .map(p -> p.getPrice())
-                        .mapToInt(price -> price.intValue())
-                        .sum()
-        );
-        
-//    d. Given a list of strings, filter out the ones that start with a specific letter.
-        System.out.println(
-                StreamUtils.createPersons().stream()
-                        .filter(p -> p.getName().startsWith("T"))
-//                        .map(p -> p.getName())
-//                        .filter(n -> n.startsWith("T"))
-//                        .filter(n -> !n.contains(" "))   
-                        .collect(Collectors.toList())
-        );
-    }
+//    b. Given a list of integers, convert each number to its square and print the resulting list.
+    System.out.println(
+            StreamUtils.getOrderedNumbers().stream()
+                    .map(a->a*a)
+                    .collect(Collectors.toList())
+    );
+
+//    c. Given a list of objects, extract a specific property from each object and print it.
+    System.out.println(
+            StreamUtils.createPersons().stream()
+                    .map(Person::getName)
+                    .collect(Collectors.toList())
+    );
+
+}
 }
