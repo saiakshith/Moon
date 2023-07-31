@@ -1,6 +1,7 @@
 package com.enh.streams.data;
 
 import com.enh.streams.enums.Arrival;
+import com.enh.streams.enums.Brand;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -13,13 +14,23 @@ public class Product {
     private List<Product> productReferences;
     private boolean isSellable;
     private Arrival arrival;
+    private Brand brand;
+
+    public Product(String code, String name, String description, BigDecimal price, boolean isSellable, Arrival arrival, Brand brand) {
+        this.code = code;
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.isSellable = isSellable;
+        this.arrival = arrival;
+        this.brand = brand;
+    }
 
     public Product(String code, String name, String description, BigDecimal price, List<Product> productReferences, boolean isSellable, Arrival arrival) {
         this.code = code;
         this.name = name;
         this.description = description;
         this.price = price;
-        this.productReferences = productReferences;
         this.isSellable = isSellable;
         this.arrival = arrival;
     }
@@ -100,5 +111,13 @@ public class Product {
 
     public void setArrival(Arrival arrival) {
         this.arrival = arrival;
+    }
+
+    public Brand getBrand() {
+        return brand;
+    }
+
+    public void setBrand(Brand brand) {
+        this.brand = brand;
     }
 }
