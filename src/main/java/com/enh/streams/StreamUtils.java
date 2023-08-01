@@ -22,8 +22,11 @@ public class StreamUtils {
         return List.of(23, 34, 87, 55, 67, 98, 39, 72, 11, 29);
     }  
     
-    public static List<Integer> getOrderedNumbers() {
+    public static  List<Integer> getOrderedNumbers() {
         return List.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+    }
+    public static List<List<Integer>> getOrderedIntegers() {
+        return List.of(List.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10),List.of(10,11,12,13,14,15,16),List.of(17,18,19,20,21));
     }
     
     public static List<Double> getRandomDoubles() {
@@ -39,6 +42,9 @@ public class StreamUtils {
     }
      public static List<String> strings() {
         return List.of("CString", "AString-2", "BString-3gh");
+    }
+    public static List<String> stringsContainingWords() {
+        return List.of("Rahul Rohith", "Ayyagaru Akhhil", "Monkey Mounika","Rahul");
     }
 
     public static List<Person> createPersons() {

@@ -1,8 +1,7 @@
-package com.enh.streams.exercises.prudhvi;
+package com.enh.streams.exercises.prudhvi.beginner;
 
 import com.enh.streams.StreamUtils;
 import com.enh.streams.data.Employee;
-import com.enh.streams.data.Person;
 
 import java.util.Comparator;
 import java.util.stream.Collectors;
