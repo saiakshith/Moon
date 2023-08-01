@@ -38,6 +38,10 @@ public class StreamUtils {
     public static List<String> getStringsList() {
         return Arrays.asList("String-2", null, "String-3", null, "String-1");
     }
+
+    public static List<String> getStreamOfStrings(){
+        return List.of("hybris","commerce","B2C","B2B","B2B");
+    }
     
     public static List<String> getSentencesList() {
         return List.of("I’m begging you, don’t make me a killer!", "The pain you feel today will be the strength you’ll have tomorrow.");
