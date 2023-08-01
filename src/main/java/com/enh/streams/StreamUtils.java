@@ -87,17 +87,17 @@ public class StreamUtils {
         return List.of(
                 new Product("SG-22-101", "Samsung Galaxy S22", "Buy galaxy & change your life", new BigDecimal(17_000), null, true, Arrival.OLD, Brand.SAMSUNG, 2),
                 new Product("TV-22-475", "Samsung TV 2", "Buy samsung tv & change your life", new BigDecimal(2_31_000), null, false, Arrival.OLD, Brand.SAMSUNG, 5),
-                new Product("OP-7P", "One Plus 7 Pro", "Buy one plus when you don't have enough money for iphone", new BigDecimal(40_000), null, true, Arrival.NEW, Brand.ONE_PLUS, 4),
-                new Product("SGU-23-613", "Samsung S23 Ultra", "Buy galaxy ultra S23 & change your life", new BigDecimal(58_000), null, true, Arrival.NEW, Brand.SAMSUNG, 8),
-                new Product("SG-23-213", "Samsung Galaxy S23", "Buy samsung S23 & change your life", new BigDecimal(23_000), null,false, Arrival.OLD, Brand.SAMSUNG, 2),
                 new Product("OP-8P", "One Plus 7 Pro", "Buy one plus when you don't have enough money for iphone", new BigDecimal(70_000), null, true, Arrival.NEW, Brand.ONE_PLUS, 4),
+                new Product("SGU-23-613", "Samsung S23 Ultra", "Buy galaxy ultra S23 & change your life", new BigDecimal(58_000), null, true, Arrival.NEW, Brand.SAMSUNG, 2),
+                new Product("SG-23-213", "Samsung Galaxy S23", "Buy samsung S23 & change your life", new BigDecimal(23_000), null,false, Arrival.OLD, Brand.SAMSUNG, 2),
                 new Product("ST-22-875", "Samsung Tab 2", "Buy samsung tab & change your life", new BigDecimal(78_000), null, true, Arrival.NEW, Brand.SAMSUNG, 5),
+                new Product("I-14PM", "Iphone 14 Pro Max", "Buying iphone means almost no regrets", new BigDecimal(1_30_000), null, true, Arrival.NEW, Brand.APPLE, 6),
+                new Product("OP-7P", "One Plus 7 Pro", "Buy one plus when you don't have enough money for iphone", new BigDecimal(40_000), null, true, Arrival.NEW, Brand.ONE_PLUS, 2),
                 new Product("STI-22-913", "Samsung Trade-In", "Buy samsung trade-in & change your life", new BigDecimal(9_000), null, true, Arrival.NEW, Brand.SAMSUNG, 7),
-                new Product("I-8P", "Iphone 8 Plus", "Buying iphone means almost no regrets", new BigDecimal(70_000), null, true, Arrival.NEW, Brand.APPLE, 2),
                 new Product("ST-22-101", "Samsung Theft", "Buy samsung tab & change your life", new BigDecimal(58_000), null, false, Arrival.OLD, Brand.SAMSUNG, 1),
                 new Product("TV-22-095", "Samsung TV 1", "Buy samsung tv & change your life", new BigDecimal(1_10_000), null, true, Arrival.NEW, Brand.SAMSUNG, 4),
                 new Product("ST-22-774", "Samsung Tab 1", "Buy samsung theft & change your life", new BigDecimal(5_000), null, false, Arrival.OLD, Brand.SAMSUNG, 1),
-                new Product("I-14PM", "Iphone 14 Pro Max", "Buying iphone means almost no regrets", new BigDecimal(1_30_000), null, true, Arrival.NEW, Brand.APPLE, 1),
+                new Product("I-8P", "Iphone 8 Plus", "Buying iphone means almost no regrets", new BigDecimal(70_000), null, true, Arrival.NEW, Brand.APPLE, 2),
                 new Product("SM-22-565", "Samsung Monitor 1", "Buy samsung monitor & change your life", new BigDecimal(1_45000), null, true, Arrival.NEW, Brand.SAMSUNG, 2),
                 new Product("SC-22-312", "Samsung Care Plus", "Buy samsung care plus & change your life", new BigDecimal(2_000), null, false, Arrival.NEW, Brand.SAMSUNG, 1)
         );

@@ -67,6 +67,8 @@ public class Product {
                 ", productReferences=" + productReferences +
                 ", isSellable=" + isSellable +
                 ", arrival=" + arrival +
+                ", brand=" + brand +
+                ", sold=" + sold +
                 '}';
     }
 
