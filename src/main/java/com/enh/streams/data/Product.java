@@ -2,6 +2,7 @@ package com.enh.streams.data;
 
 import com.enh.streams.enums.Arrival;
 import com.enh.streams.enums.Brand;
+import com.enh.streams.enums.PaymentMode;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -16,6 +17,22 @@ public class Product {
     private Arrival arrival;
     private Brand brand;
     private int sold;
+    private int ratings;
+    private PaymentMode paymentMode;
+
+    public Product(String code, String name, String description, BigDecimal price, List<Product> productReferences, boolean isSellable, Arrival arrival, Brand brand, int sold, int ratings, PaymentMode paymentMode) {
+        this.code = code;
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.productReferences = productReferences;
+        this.isSellable = isSellable;
+        this.arrival = arrival;
+        this.brand = brand;
+        this.sold = sold;
+        this.ratings = ratings;
+        this.paymentMode = paymentMode;
+    }
 
     public Product(String code, String name, String description, BigDecimal price, List<Product> productReferences, boolean isSellable, Arrival arrival, Brand brand, int sold) {
         this.code = code;
@@ -69,6 +86,8 @@ public class Product {
                 ", arrival=" + arrival +
                 ", brand=" + brand +
                 ", sold=" + sold +
+                ", ratings=" + ratings +
+                ", paymentMode=" + paymentMode +
                 '}';
     }
 
@@ -142,5 +161,21 @@ public class Product {
 
     public void setSold(int sold) {
         this.sold = sold;
+    }
+
+    public int getRatings() {
+        return ratings;
+    }
+
+    public void setRatings(int ratings) {
+        this.ratings = ratings;
+    }
+
+    public PaymentMode getPaymentMode() {
+        return paymentMode;
+    }
+
+    public void setPaymentMode(PaymentMode paymentMode) {
+        this.paymentMode = paymentMode;
     }
 }

@@ -85,21 +85,21 @@ public class StreamUtils {
     
     public static List<Product> getProducts() {
         return List.of(
-                new Product("SG-22-101", "Samsung Galaxy S22", null, new BigDecimal(17_000), null, true, Arrival.OLD, Brand.SAMSUNG, 2),
-                new Product("TV-22-475", "Samsung TV 2", "Buy samsung tv & make your life simpler", new BigDecimal(2_31_000), null, false, Arrival.OLD, Brand.SAMSUNG, 5),
-                new Product("OP-8P", "One Plus 7 Pro", "Buy one plus when you don't have enough money for iphone", new BigDecimal(70_000), null, true, Arrival.NEW, Brand.ONE_PLUS, 4),
-                new Product("SG-23-213", "Samsung Galaxy S23", null, new BigDecimal(23_000), null,false, Arrival.OLD, Brand.SAMSUNG, 2),
-                new Product("ST-22-875", "Samsung Tab 2", "Buy samsung tab & make your life simpler", new BigDecimal(78_000), null, true, Arrival.NEW, Brand.SAMSUNG, 5),
-                new Product("OP-7P", "One Plus 7 Pro", "Buy one plus when you don't have enough money for iphone", new BigDecimal(40_000), null, true, Arrival.NEW, Brand.ONE_PLUS, 2),
-                new Product("SGU-23-613", "Samsung S23 Ultra", "Buy galaxy ultra S23 & make your life simpler", new BigDecimal(58_000), null, true, Arrival.NEW, Brand.SAMSUNG, 2),
-                new Product("I-14PM", "Iphone 14 Pro Max", "Buying iphone means almost no regrets", new BigDecimal(1_30_000), null, true, Arrival.NEW, Brand.APPLE, 6),
-                new Product("STI-22-913", "Samsung Trade-In", null, new BigDecimal(9_000), null, true, Arrival.NEW, Brand.SAMSUNG, 7),
-                new Product("OP-9T", "One Plus 9T", "Buy one plus 9T", new BigDecimal(58_000), null, false, Arrival.OLD, Brand.ONE_PLUS, 1),
-                new Product("TV-22-095", "Samsung TV 1", "Buy samsung tv & make your life simpler", new BigDecimal(1_10_000), null, true, Arrival.NEW, Brand.SAMSUNG, 4),
-                new Product("ST-22-774", "Samsung Tab 1", "Buy samsung theft & make your life simpler", new BigDecimal(5_000), null, false, Arrival.OLD, Brand.SAMSUNG, 1),
-                new Product("I-8P", "Iphone 8 Plus", "Buying iphone means almost no regrets", new BigDecimal(70_000), null, true, Arrival.NEW, Brand.APPLE, 2),
-                new Product("SM-22-565", "Samsung Monitor 1", "Buy samsung monitor & make your life simpler", new BigDecimal(1_45000), null, true, Arrival.NEW, Brand.SAMSUNG, 2),
-                new Product("I-12P", "Iphone 12 Pro", "Buying iphone means almost no regrets", new BigDecimal(92_000), null, false, Arrival.NEW, Brand.APPLE, 3)
+                new Product("SG-22-101", "Samsung Galaxy S22", null, new BigDecimal(17_000), null, true, Arrival.OLD, Brand.SAMSUNG, 2, 4, PaymentMode.ADYEN),
+                new Product("TV-22-475", "Samsung TV 2", "Buy samsung tv & make your life simpler", new BigDecimal(2_31_000), null, false, Arrival.OLD, Brand.SAMSUNG, 5, 7, PaymentMode.CREDIT_CARD),
+                new Product("OP-8P", "One Plus 7 Pro", "Buy one plus when you don't have enough money for iphone", new BigDecimal(70_000), null, true, Arrival.NEW, Brand.ONE_PLUS, 4, 5, PaymentMode.PAYTM),
+                new Product("SG-23-213", "Samsung Galaxy S23", null, new BigDecimal(23_000), null,false, Arrival.OLD, Brand.SAMSUNG, 2, 7, PaymentMode.DEBIT_CARD),
+                new Product("ST-22-875", "Samsung Tab 2", "Buy samsung tab & make your life simpler", new BigDecimal(78_000), null, true, Arrival.NEW, Brand.SAMSUNG, 5, 3, PaymentMode.AMAZON_PAY),
+                new Product("OP-7P", "One Plus 7 Pro", "Buy one plus when you don't have enough money for iphone", new BigDecimal(40_000), null, true, Arrival.NEW, Brand.ONE_PLUS, 2, 8, PaymentMode.PAYPAL),
+                new Product("SGU-23-613", "Samsung S23 Ultra", "Buy galaxy ultra S23 & make your life simpler", new BigDecimal(58_000), null, true, Arrival.NEW, Brand.SAMSUNG, 2, 6, PaymentMode.PAYTM),
+                new Product("I-14PM", "Iphone 14 Pro Max", "Buying iphone means almost no regrets", new BigDecimal(1_30_000), null, true, Arrival.NEW, Brand.APPLE, 6, 14, PaymentMode.DEBIT_CARD),
+                new Product("STI-22-913", "Samsung Trade-In", null, new BigDecimal(9_000), null, true, Arrival.NEW, Brand.SAMSUNG, 7, 0, PaymentMode.ADYEN),
+                new Product("OP-9T", "One Plus 9T", "Buy one plus 9T", new BigDecimal(58_000), null, false, Arrival.OLD, Brand.ONE_PLUS, 1, 23, PaymentMode.AMAZON_PAY),
+                new Product("TV-22-095", "Samsung TV 1", "Buy samsung tv & make your life simpler", new BigDecimal(1_10_000), null, true, Arrival.NEW, Brand.SAMSUNG, 4, 1, PaymentMode.CREDIT_CARD),
+                new Product("ST-22-774", "Samsung Tab 1", "Buy samsung theft & make your life simpler", new BigDecimal(5_000), null, false, Arrival.OLD, Brand.SAMSUNG, 1, 4, PaymentMode.PAYTM),
+                new Product("I-8P", "Iphone 8 Plus", "Buying iphone means almost no regrets", new BigDecimal(70_000), null, true, Arrival.NEW, Brand.APPLE, 2, 7, PaymentMode.DEBIT_CARD),
+                new Product("SM-22-565", "Samsung Monitor 1", "Buy samsung monitor & make your life simpler", new BigDecimal(1_45000), null, true, Arrival.NEW, Brand.SAMSUNG, 2, 5, PaymentMode.PAYTM),
+                new Product("I-12P", "Iphone 12 Pro", "Buying iphone means almost no regrets", new BigDecimal(92_000), null, false, Arrival.NEW, Brand.APPLE, 3, 15, PaymentMode.AMAZON_PAY)
         );
     }
 }
