@@ -38,7 +38,7 @@ public class StreamUtils {
         return List.of("String-1", "String-2", "String-3");
     }
      public static List<String> strings() {
-        return List.of("CString-1", "AString-2", "BString-3");
+        return List.of("CString", "AString-2", "BString-3gh");
     }
 
     public static List<Person> createPersons() {
