@@ -73,13 +73,13 @@ public class StreamUtils {
                 new Employee("G-0324", "Mounika", 134, Role.SAP_FRONTEND_DEV, new BigDecimal(25_000), Gender.FEMALE, Arrays.asList(Department.FE_DEVELOPMENT, Department.FEATURE_TESTING), false),
                 new Employee("G-0398", "Veera Narayan", 57, Role.SAP_QA_TESTER, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.TESTING), true),
                 new Employee("G-0335", "Ravi", 66, Role.SAP_QA_TESTER, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.TESTING, Department.FEATURE_TESTING), false),
+                new Employee("G-0378", "Akhil", 73, Role.SAP_BACKEND_DEV, new BigDecimal(89_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT), true),
                 new Employee("G-0387", "Meena", 94, Role.SAP_COMMERCE_TECH_LEAD, new BigDecimal(25_000), Gender.FEMALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.TECH_DESIGN), true),
                 new Employee("G-0351", "Sangeetha", 85, Role.SAP_QA_TESTER, new BigDecimal(25_000), Gender.FEMALE, Arrays.asList(Department.TESTING), false),
-                new Employee("G-0378", "Akhil", 73, Role.SAP_BACKEND_DEV, new BigDecimal(89_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT), true),
-                new Employee("G-0378", "Akhil", 118, Role.SAP_BACKEND_DEV, new BigDecimal(89_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT), true),
+                new Employee("G-0378", "Akhil", 118, Role.SAP_BACKEND_DEV, new BigDecimal(89_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.TESTING), true),
                 new Employee("G-0367", "Yuva Veearmachaneni", 72, Role.SAP_COMMERCE_ARCHITECT, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.TECH_DESIGN), true),
                 new Employee("G-0386", "Hanumanth Reddy", 112, Role.SAP_COMMERCE_TECH_LEAD, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.FE_DEVELOPMENT, Department.TECH_DESIGN), false),
-                new Employee("G-0411", "Surekha Dongre", 134, Role.SAP_COMMERCE_DELIVERY_LEAD, new BigDecimal(25_000), Gender.FEMALE, Arrays.asList(Department.FE_DEVELOPMENT, Department.BE_DEVELOPEMENT), true)
+                new Employee("G-0411", "Surekha Dongre", 134, Role.SAP_COMMERCE_DELIVERY_HEAD, new BigDecimal(25_000), Gender.FEMALE, Arrays.asList(Department.FE_DEVELOPMENT, Department.BE_DEVELOPEMENT), true)
         );
     }
     
@@ -88,18 +88,18 @@ public class StreamUtils {
                 new Product("SG-22-101", "Samsung Galaxy S22", null, new BigDecimal(17_000), null, true, Arrival.OLD, Brand.SAMSUNG, 2),
                 new Product("TV-22-475", "Samsung TV 2", "Buy samsung tv & make your life simpler", new BigDecimal(2_31_000), null, false, Arrival.OLD, Brand.SAMSUNG, 5),
                 new Product("OP-8P", "One Plus 7 Pro", "Buy one plus when you don't have enough money for iphone", new BigDecimal(70_000), null, true, Arrival.NEW, Brand.ONE_PLUS, 4),
-                new Product("SGU-23-613", "Samsung S23 Ultra", "Buy galaxy ultra S23 & make your life simpler", new BigDecimal(58_000), null, true, Arrival.NEW, Brand.SAMSUNG, 2),
                 new Product("SG-23-213", "Samsung Galaxy S23", null, new BigDecimal(23_000), null,false, Arrival.OLD, Brand.SAMSUNG, 2),
                 new Product("ST-22-875", "Samsung Tab 2", "Buy samsung tab & make your life simpler", new BigDecimal(78_000), null, true, Arrival.NEW, Brand.SAMSUNG, 5),
-                new Product("I-14PM", "Iphone 14 Pro Max", "Buying iphone means almost no regrets", new BigDecimal(1_30_000), null, true, Arrival.NEW, Brand.APPLE, 6),
                 new Product("OP-7P", "One Plus 7 Pro", "Buy one plus when you don't have enough money for iphone", new BigDecimal(40_000), null, true, Arrival.NEW, Brand.ONE_PLUS, 2),
+                new Product("SGU-23-613", "Samsung S23 Ultra", "Buy galaxy ultra S23 & make your life simpler", new BigDecimal(58_000), null, true, Arrival.NEW, Brand.SAMSUNG, 2),
+                new Product("I-14PM", "Iphone 14 Pro Max", "Buying iphone means almost no regrets", new BigDecimal(1_30_000), null, true, Arrival.NEW, Brand.APPLE, 6),
                 new Product("STI-22-913", "Samsung Trade-In", null, new BigDecimal(9_000), null, true, Arrival.NEW, Brand.SAMSUNG, 7),
-                new Product("ST-22-101", "Samsung Theft", "Buy samsung tab & make your life simpler", new BigDecimal(58_000), null, false, Arrival.OLD, Brand.SAMSUNG, 1),
+                new Product("OP-9T", "One Plus 9T", "Buy one plus 9T", new BigDecimal(58_000), null, false, Arrival.OLD, Brand.ONE_PLUS, 1),
                 new Product("TV-22-095", "Samsung TV 1", "Buy samsung tv & make your life simpler", new BigDecimal(1_10_000), null, true, Arrival.NEW, Brand.SAMSUNG, 4),
                 new Product("ST-22-774", "Samsung Tab 1", "Buy samsung theft & make your life simpler", new BigDecimal(5_000), null, false, Arrival.OLD, Brand.SAMSUNG, 1),
                 new Product("I-8P", "Iphone 8 Plus", "Buying iphone means almost no regrets", new BigDecimal(70_000), null, true, Arrival.NEW, Brand.APPLE, 2),
                 new Product("SM-22-565", "Samsung Monitor 1", "Buy samsung monitor & make your life simpler", new BigDecimal(1_45000), null, true, Arrival.NEW, Brand.SAMSUNG, 2),
-                new Product("SC-22-312", "Samsung Care Plus", "Buy samsung care plus & make your life simpler", new BigDecimal(2_000), null, false, Arrival.NEW, Brand.SAMSUNG, 1)
+                new Product("I-12P", "Iphone 12 Pro", "Buying iphone means almost no regrets", new BigDecimal(92_000), null, false, Arrival.NEW, Brand.APPLE, 3)
         );
     }
 }
