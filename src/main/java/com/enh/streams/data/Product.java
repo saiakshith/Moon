@@ -34,46 +34,6 @@ public class Product {
         this.paymentMode = paymentMode;
     }
 
-    public Product(String code, String name, String description, BigDecimal price, List<Product> productReferences, boolean isSellable, Arrival arrival, Brand brand, int sold) {
-        this.code = code;
-        this.name = name;
-        this.description = description;
-        this.price = price;
-        this.productReferences = productReferences;
-        this.isSellable = isSellable;
-        this.arrival = arrival;
-        this.brand = brand;
-        this.sold = sold;
-    }
-
-    public Product(String code, String name, String description, BigDecimal price, boolean isSellable, Arrival arrival, Brand brand) {
-        this.code = code;
-        this.name = name;
-        this.description = description;
-        this.price = price;
-        this.isSellable = isSellable;
-        this.arrival = arrival;
-        this.brand = brand;
-    }
-
-    public Product(String code, String name, String description, BigDecimal price, List<Product> productReferences, boolean isSellable, Arrival arrival) {
-        this.code = code;
-        this.name = name;
-        this.description = description;
-        this.price = price;
-        this.isSellable = isSellable;
-        this.arrival = arrival;
-    }
-
-    public Product(String code, String name, String description, BigDecimal price, boolean isSellable, Arrival arrival) {
-        this.code = code;
-        this.name = name;
-        this.description = description;
-        this.price = price;
-        this.isSellable = isSellable;
-        this.arrival = arrival;
-    }
-
     @Override
     public String toString() {
         return "Product{" +

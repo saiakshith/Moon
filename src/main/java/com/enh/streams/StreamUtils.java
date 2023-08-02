@@ -64,22 +64,22 @@ public class StreamUtils {
     
     public static List<Employee> getEmployees() {
         return List.of(
-                new Employee("G-0305", "Sai Akshith", 25, Role.SAP_BACKEND_DEV, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.TECH_DESIGN, Department.FEATURE_TESTING), false),
-                new Employee("G-0361", "Akanksha", 134, Role.SAP_QA_TESTER, new BigDecimal(25_000), Gender.FEMALE, Arrays.asList(Department.TESTING), true),
-                new Employee("G-0312", "Prudhvi Narsing", 45, Role.SAP_BACKEND_DEV, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.FEATURE_TESTING, Department.TECH_DESIGN), false),
-                new Employee("G-0345", "Mayur Lad", 34, Role.SAP_COMMERCE_ARCHITECT, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.TECH_DESIGN, Department.FE_DEVELOPMENT), true),
-                new Employee("G-0398", "Veera Narayan", 26, Role.SAP_BACKEND_DEV, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.TESTING), true),
-                new Employee("G-0378", "Akhil", 13, Role.SAP_BACKEND_DEV, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT), false),
-                new Employee("G-0324", "Mounika", 134, Role.SAP_FRONTEND_DEV, new BigDecimal(25_000), Gender.FEMALE, Arrays.asList(Department.FE_DEVELOPMENT, Department.FEATURE_TESTING), false),
-                new Employee("G-0398", "Veera Narayan", 57, Role.SAP_QA_TESTER, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.TESTING), true),
-                new Employee("G-0335", "Ravi", 66, Role.SAP_QA_TESTER, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.TESTING, Department.FEATURE_TESTING), false),
-                new Employee("G-0378", "Akhil", 73, Role.SAP_BACKEND_DEV, new BigDecimal(89_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.FE_DEVELOPMENT, Department.TECH_DESIGN), true),
-                new Employee("G-0387", "Meena", 94, Role.SAP_COMMERCE_TECH_LEAD, new BigDecimal(25_000), Gender.FEMALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.TECH_DESIGN), true),
-                new Employee("G-0351", "Sangeetha", 85, Role.SAP_QA_TESTER, new BigDecimal(25_000), Gender.FEMALE, Arrays.asList(Department.TESTING), false),
-                new Employee("G-0378", "Akhil", 118, Role.SAP_BACKEND_DEV, new BigDecimal(89_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.TESTING), true),
-                new Employee("G-0367", "Yuva Veearmachaneni", 72, Role.SAP_COMMERCE_ARCHITECT, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.TECH_DESIGN), true),
-                new Employee("G-0386", "Hanumanth Reddy", 112, Role.SAP_COMMERCE_TECH_LEAD, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.FE_DEVELOPMENT, Department.TECH_DESIGN), false),
-                new Employee("G-0411", "Surekha Dongre", 134, Role.SAP_COMMERCE_DELIVERY_HEAD, new BigDecimal(25_000), Gender.FEMALE, Arrays.asList(Department.FE_DEVELOPMENT, Department.BE_DEVELOPEMENT), true)
+                new Employee("G-0305", "Sai Akshith", 25, Role.SAP_BACKEND_DEV, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.TECH_DESIGN, Department.FEATURE_TESTING), false, 3),
+                new Employee("G-0361", "Akanksha", 134, Role.SAP_QA_TESTER, new BigDecimal(25_000), Gender.FEMALE, Arrays.asList(Department.TESTING), true, 7),
+                new Employee("G-0312", "Prudhvi Narsing", 45, Role.SAP_BACKEND_DEV, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.FEATURE_TESTING, Department.TECH_DESIGN), false, 9),
+                new Employee("G-0345", "Mayur Lad", 34, Role.SAP_COMMERCE_ARCHITECT, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.TECH_DESIGN, Department.FE_DEVELOPMENT), true, 2),
+                new Employee("G-0398", "Veera Narayan", 26, Role.SAP_BACKEND_DEV, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.TESTING), true, 5),
+                new Employee("G-0378", "Akhil", 33, Role.SAP_BACKEND_DEV, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT), false, 3),
+                new Employee("G-0324", "Mounika", 134, Role.SAP_FRONTEND_DEV, new BigDecimal(25_000), Gender.FEMALE, Arrays.asList(Department.FE_DEVELOPMENT, Department.FEATURE_TESTING), false, 7),
+                new Employee("G-0398", "Veera Narayan", 57, Role.SAP_QA_TESTER, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.TESTING), true, 8),
+                new Employee("G-0335", "Ravi", 66, Role.SAP_QA_TESTER, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.TESTING, Department.FEATURE_TESTING), false, 1),
+                new Employee("G-0378", "Akhil", 73, Role.SAP_COMMERCE_ARCHITECT, new BigDecimal(89_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.FE_DEVELOPMENT, Department.TECH_DESIGN), true, 3),
+                new Employee("G-0387", "Meena", 94, Role.SAP_BACKEND_DEV, new BigDecimal(25_000), Gender.FEMALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.TECH_DESIGN), true, 4),
+                new Employee("G-0351", "Sangeetha", 85, Role.SAP_BACKEND_DEV, new BigDecimal(25_000), Gender.FEMALE, Arrays.asList(Department.TESTING), false, 8),
+                new Employee("G-0378", "Akhil", 118, Role.SAP_QA_TESTER, new BigDecimal(89_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.TESTING), true, 6),
+                new Employee("G-0367", "Yuva Veearmachaneni", 72, Role.SAP_COMMERCE_ARCHITECT, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.TECH_DESIGN), true, 2),
+                new Employee("G-0386", "Hanumanth Reddy", 112, Role.SAP_COMMERCE_TECH_LEAD, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.FE_DEVELOPMENT, Department.TECH_DESIGN), false, 4),
+                new Employee("G-0411", "Surekha Dongre", 134, Role.SAP_COMMERCE_DELIVERY_HEAD, new BigDecimal(25_000), Gender.FEMALE, Arrays.asList(Department.FE_DEVELOPMENT, Department.BE_DEVELOPEMENT), true, 6)
         );
     }
     

@@ -16,8 +16,9 @@ public class Employee {
     private Gender gender;
     private List<Department> departments;
     private boolean isAdmin;
+    private int rating;
 
-    public Employee(String id, String name, int age, Role role, BigDecimal salary, Gender gender, List<Department> departments, boolean isAdmin) {
+    public Employee(String id, String name, int age, Role role, BigDecimal salary, Gender gender, List<Department> departments, boolean isAdmin, int rating) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -26,6 +27,7 @@ public class Employee {
         this.gender = gender;
         this.departments = departments;
         this.isAdmin = isAdmin;
+        this.rating = rating;
     }
 
     @Override
@@ -104,5 +106,13 @@ public class Employee {
 
     public void setAdmin(boolean admin) {
         isAdmin = admin;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
     }
 }
