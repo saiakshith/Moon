@@ -30,10 +30,10 @@ public class StreamsEx4 {
                                                         .limit(1)
                                                         .map(Employee::getAge)
                                                         .collect(toList())), 
-                                        (m, f) -> Stream.of(m, f)
-                                                .flatMap(l -> l.stream())
-                                                .collect(toList()))))
-//                                        (List<Employee> males, List<Employee> females) -> males.addAll(females))))
+                                        (l1, l2) -> { l1.addAll(l2); return l1; })))
+//                                        (m, f) -> Stream.of(m, f)
+//                                                .flatMap(l -> l.stream())
+//                                                .collect(toList()))))
         );
 
 //        Given a list of Employee objects, calculate the average salary of employees who have positive performance reviews (rating greater than 5.0).
