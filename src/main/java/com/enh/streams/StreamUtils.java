@@ -73,7 +73,7 @@ public class StreamUtils {
                 new Employee("G-0324", "Mounika", 134, Role.SAP_FRONTEND_DEV, new BigDecimal(25_000), Gender.FEMALE, Arrays.asList(Department.FE_DEVELOPMENT, Department.FEATURE_TESTING), false),
                 new Employee("G-0398", "Veera Narayan", 57, Role.SAP_QA_TESTER, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.TESTING), true),
                 new Employee("G-0335", "Ravi", 66, Role.SAP_QA_TESTER, new BigDecimal(25_000), Gender.MALE, Arrays.asList(Department.TESTING, Department.FEATURE_TESTING), false),
-                new Employee("G-0378", "Akhil", 73, Role.SAP_BACKEND_DEV, new BigDecimal(89_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT), true),
+                new Employee("G-0378", "Akhil", 73, Role.SAP_BACKEND_DEV, new BigDecimal(89_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.FE_DEVELOPMENT, Department.TECH_DESIGN), true),
                 new Employee("G-0387", "Meena", 94, Role.SAP_COMMERCE_TECH_LEAD, new BigDecimal(25_000), Gender.FEMALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.TECH_DESIGN), true),
                 new Employee("G-0351", "Sangeetha", 85, Role.SAP_QA_TESTER, new BigDecimal(25_000), Gender.FEMALE, Arrays.asList(Department.TESTING), false),
                 new Employee("G-0378", "Akhil", 118, Role.SAP_BACKEND_DEV, new BigDecimal(89_000), Gender.MALE, Arrays.asList(Department.BE_DEVELOPEMENT, Department.TESTING), true),
@@ -96,7 +96,7 @@ public class StreamUtils {
                 new Product("STI-22-913", "Samsung Trade-In", null, new BigDecimal(9_000), null, true, Arrival.NEW, Brand.SAMSUNG, 7, 0, PaymentMode.ADYEN),
                 new Product("OP-9T", "One Plus 9T", "Buy one plus 9T", new BigDecimal(58_000), null, false, Arrival.OLD, Brand.ONE_PLUS, 1, 23, PaymentMode.AMAZON_PAY),
                 new Product("TV-22-095", "Samsung TV 1", "Buy samsung tv & make your life simpler", new BigDecimal(1_10_000), null, true, Arrival.NEW, Brand.SAMSUNG, 4, 1, PaymentMode.CREDIT_CARD),
-                new Product("ST-22-774", "Samsung Tab 1", "Buy samsung theft & make your life simpler", new BigDecimal(5_000), null, false, Arrival.OLD, Brand.SAMSUNG, 1, 4, PaymentMode.PAYTM),
+                new Product("ST-22-774", "Samsung Tab 1", "Buy samsung theft & make your life simpler", new BigDecimal(5_000), null, false, Arrival.OLD, Brand.SAMSUNG, 100, 4, PaymentMode.PAYTM),
                 new Product("I-8P", "Iphone 8 Plus", "Buying iphone means almost no regrets", new BigDecimal(70_000), null, true, Arrival.NEW, Brand.APPLE, 2, 7, PaymentMode.DEBIT_CARD),
                 new Product("SM-22-565", "Samsung Monitor 1", "Buy samsung monitor & make your life simpler", new BigDecimal(1_45000), null, true, Arrival.NEW, Brand.SAMSUNG, 2, 5, PaymentMode.PAYTM),
                 new Product("I-12P", "Iphone 12 Pro", "Buying iphone means almost no regrets", new BigDecimal(92_000), null, false, Arrival.NEW, Brand.APPLE, 3, 15, PaymentMode.AMAZON_PAY)
