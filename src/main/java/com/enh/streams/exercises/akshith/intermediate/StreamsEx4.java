@@ -39,7 +39,7 @@ public class StreamsEx4 {
         System.out.println(
                 StreamUtils.getProducts().stream()
                         .filter(p -> (p.getPrice().intValue() >= 1_00_000) && (p.getPrice().intValue() <= 1_50_000))
-                        .collect(maxBy(comparingInt(Product::getSold)))
+                        .max(comparingInt(Product::getSold))
                         .map(Product::getSold)
         );
         
@@ -55,23 +55,25 @@ public class StreamsEx4 {
         );
         
 //        Given a collection of employees, sort them by role & give employees names in sorted order
-        // a.
+        // v1
         System.out.println(
                 StreamUtils.getEmployees().stream()
                         .collect(groupingBy(Employee::getRole, 
                                 collectingAndThen(mapping(Employee::getName, toList()), 
                                         n -> n.stream()
                                                 .sorted(comparing(String::valueOf))
+                                                .sorted(comparing(String::valueOf).reversed()) // Descending
                                                 .collect(toList()))))
         );
         
-        // b.
+        // v2
         System.out.println(
                 StreamUtils.getEmployees().stream()
                         .collect(groupingBy(Employee::getRole, 
                                 mapping(Employee::getName, 
                                         collectingAndThen(toList(), n -> n.stream()
-                                                .sorted(Comparator.comparing(String::valueOf))
+                                                .sorted(comparing(String::valueOf))
+//                                                .sorted(comparing(String::valueOf).reversed())  // Descending
                                                 .collect(toList())))))
         );
         

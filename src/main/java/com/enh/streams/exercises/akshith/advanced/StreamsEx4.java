@@ -9,6 +9,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Stream;
 
+import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.*;
 
 public class StreamsEx4 {
@@ -20,13 +21,13 @@ public class StreamsEx4 {
                         .collect(groupingBy(Employee::getRole,
                                 teeing(collectingAndThen(toList(), (List<Employee> employees) -> employees.stream()
                                                         .filter(e -> e.getGender() == Gender.MALE)
-                                                        .sorted(Comparator.comparing(Employee::getAge).reversed())
+                                                        .sorted(comparing(Employee::getAge).reversed())
                                                         .limit(1)
                                                         .map(Employee::getAge)
                                                         .collect(toList())),
                                         collectingAndThen(toList(), (List<Employee> employees) -> employees.stream()
                                                         .filter(e -> e.getGender() == Gender.FEMALE)
-                                                        .sorted(Comparator.comparing(Employee::getAge).reversed())
+                                                        .sorted(comparing(Employee::getAge).reversed())
                                                         .limit(1)
                                                         .map(Employee::getAge)
                                                         .collect(toList())), 
@@ -34,6 +35,18 @@ public class StreamsEx4 {
 //                                        (m, f) -> Stream.of(m, f)
 //                                                .flatMap(l -> l.stream())
 //                                                .collect(toList()))))
+        );
+        
+//        Given a collection of employees, sort them by role & give employees names sorted by age
+        System.out.println(
+                StreamUtils.getEmployees().stream()
+                        .collect(groupingBy(Employee::getRole,
+                                collectingAndThen(toList(),
+                                        e -> e.stream()
+                                                .sorted(comparing(Employee::getAge))
+//                                                .sorted(comparing(Employee::getAge).reversed())  // Descending
+                                                .map(Employee::getName)
+                                                .collect(toList()))))
         );
 
 //        Given a list of Employee objects, calculate the average salary of employees who have positive performance reviews (rating greater than 5.0).
