@@ -1,13 +1,14 @@
 package com.enh.streams.exercises.akshith.intermediate;
 
 import com.enh.streams.StreamUtils;
+import com.enh.streams.data.Employee;
 import com.enh.streams.data.Product;
 import com.enh.streams.enums.Brand;
 
-import java.math.BigDecimal;
 import java.util.Comparator;
-import java.util.stream.Collectors;
 
+import static java.util.Comparator.comparing;
+import static java.util.Comparator.comparingInt;
 import static java.util.stream.Collectors.*;
 
 //        Combining Operations
@@ -17,9 +18,9 @@ public class StreamsEx4 {
 //        Find the top 3 products with the highest ratings and sort them by price.
         System.out.println(
                 StreamUtils.getProducts().stream()
-                        .sorted(Comparator.comparingInt(Product::getSold).reversed())
+                        .sorted(comparingInt(Product::getSold).reversed())
                         .limit(3)
-                        .sorted(Comparator.comparing(Product::getPrice).reversed())
+                        .sorted(comparing(Product::getPrice).reversed())
                         .map(Product::getPrice)
 //                        .map(Product::getCode)
                         .collect(toList())
@@ -38,7 +39,7 @@ public class StreamsEx4 {
         System.out.println(
                 StreamUtils.getProducts().stream()
                         .filter(p -> (p.getPrice().intValue() >= 1_00_000) && (p.getPrice().intValue() <= 1_50_000))
-                        .collect(maxBy(Comparator.comparingInt(Product::getSold)))
+                        .collect(maxBy(comparingInt(Product::getSold)))
                         .map(Product::getSold)
         );
         
@@ -49,15 +50,36 @@ public class StreamsEx4 {
                                 mapping(Product::getSold, 
                                         collectingAndThen(toList(), 
                                                 productsSold -> productsSold.stream()
-                                                        .sorted(Comparator.comparingInt(Integer::intValue))
+                                                        .sorted(comparingInt(Integer::intValue))
                                                         .collect(toList())))))
+        );
+        
+//        Given a collection of employees, sort them by role & give employees names in sorted order
+        // a.
+        System.out.println(
+                StreamUtils.getEmployees().stream()
+                        .collect(groupingBy(Employee::getRole, 
+                                collectingAndThen(mapping(Employee::getName, toList()), 
+                                        n -> n.stream()
+                                                .sorted(comparing(String::valueOf))
+                                                .collect(toList()))))
+        );
+        
+        // b.
+        System.out.println(
+                StreamUtils.getEmployees().stream()
+                        .collect(groupingBy(Employee::getRole, 
+                                mapping(Employee::getName, 
+                                        collectingAndThen(toList(), n -> n.stream()
+                                                .sorted(Comparator.comparing(String::valueOf))
+                                                .collect(toList())))))
         );
         
 //        Filter out products with low inventory, sort them by price, and return the top 2 products.
         System.out.println(
                 StreamUtils.getProducts().stream()
                         .filter(p -> !p.isSellable())
-                        .sorted(Comparator.comparing(Product::getPrice))
+                        .sorted(comparing(Product::getPrice))
                         .limit(2)
                         .map(Product::getPrice)
                         .collect(toList())
