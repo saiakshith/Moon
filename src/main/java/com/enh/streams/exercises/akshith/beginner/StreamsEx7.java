@@ -15,7 +15,7 @@ public class StreamsEx7 {
         System.out.println(
                 StreamUtils.getOrderedIntegers().stream()
                         .map(i -> List.of(i + 1, i - 1))
-                        .flatMap(li -> li.stream())
+                        .flatMap(List::stream)
 //                        .filter(i -> i >= 0)
 //                        .sorted()
                         .collect(toList())

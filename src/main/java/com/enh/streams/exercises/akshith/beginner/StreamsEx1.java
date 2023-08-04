@@ -11,10 +11,9 @@ import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.toList;
 
-public class StreamsEx1 {
-
 //    Filtering and Transformation:
-
+public class StreamsEx1 {
+    
     public static void main(String[] args) {
 //    a. Given a list of integers, filter out the even numbers and find their sum.
         System.out.println(
@@ -37,8 +36,8 @@ public class StreamsEx1 {
         System.out.println(
 //                CommontUtils.getOrderedDoubles().stream()
                 StreamUtils.getRandomDoubles().stream()
-                        .mapToDouble(d -> d)
-                        .sum() / StreamUtils.getOrderedDoubles().size()
+                        .mapToDouble(Double::doubleValue)
+                        .average()
         );
         
 //    d. Given a list of strings, filter out the ones that start with a specific letter.

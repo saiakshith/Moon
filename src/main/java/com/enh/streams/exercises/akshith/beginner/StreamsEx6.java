@@ -24,7 +24,7 @@ public class StreamsEx6 {
                         .filter(Optional::isPresent)
                         .map(Optional::get)
                         .map(Integer.class::cast)     // (o -> (Integer)o)
-                        .mapToInt(v -> v)
+                        .mapToInt(Integer::intValue)
                         .sum()
         );
     }

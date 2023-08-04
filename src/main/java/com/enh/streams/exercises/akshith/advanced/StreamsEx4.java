@@ -53,7 +53,8 @@ public class StreamsEx4 {
         System.out.println(
                 StreamUtils.getEmployees().stream()
                         .filter(e -> e.getRating() > 5)
-                        .collect(mapping(Employee::getSalary, averagingInt(BigDecimal::intValue)))
+                        .collect(mapping(Employee::getSalary, 
+                                averagingInt(BigDecimal::intValue)))
         );
 
 //        Given a list of Employee objects, count the total number of employees in each department.

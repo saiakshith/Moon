@@ -40,13 +40,15 @@ public class StreamsEx1 {
 //        Group the employees by their role -> no. of employees        
         System.out.println(
                 StreamUtils.getEmployees().stream()
-                        .collect(groupingBy(Employee::getRole, mapping(Employee::getName, counting())))
+                        .collect(groupingBy(Employee::getRole, 
+                                mapping(Employee::getName, counting())))
         );
         
 //        Group the employees by their department -> employees
         System.out.println(
                 StreamUtils.getEmployees().stream()
-                        .collect(groupingBy(Employee::getDepartments, mapping(Employee::getName, toList())))
+                        .collect(groupingBy(Employee::getDepartments, 
+                                mapping(Employee::getName, toList())))
         );
     }
 }

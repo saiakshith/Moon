@@ -26,7 +26,6 @@ public class StreamsEx5 {
                         .map(n -> n * n)
                         .mapToInt(n -> n)
                         .sum()
-                
         );
         
 //    c. Group a list of strings by their first letter and concatenate them within each group.

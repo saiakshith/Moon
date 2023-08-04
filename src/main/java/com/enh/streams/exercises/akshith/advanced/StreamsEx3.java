@@ -53,7 +53,8 @@ public class StreamsEx3 {
                 StreamUtils.getEmployees().stream()
                         .collect(groupingBy(Employee::getRole, 
                                 filtering(e -> e.getGender() == Gender.FEMALE, 
-                                        mapping(Employee::getAge, averagingInt(Integer::intValue)))))
+                                        mapping(Employee::getAge, 
+                                                averagingInt(Integer::intValue)))))
         );
 
 //        Given a list of Product objects, calculate the total revenue for each category

@@ -8,8 +8,7 @@ import static java.util.stream.Collectors.toList;
 
 //    Filtering and Transformation:
 public class StreamsEx1 {
-
-
+    
     public static void main(String[] args) {
 //    Given a list of products, filter out the ones with a price higher than a certain threshold.
         System.out.println(
