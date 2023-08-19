@@ -2,12 +2,7 @@ package com.enh.streams.exercises.akshith.beginner;
 
 
 import com.enh.streams.StreamUtils;
-import com.enh.streams.data.Person;
-import com.enh.streams.data.Product;
 import org.apache.commons.lang3.StringUtils;
-
-import java.math.BigDecimal;
-import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.toList;
 
@@ -26,7 +21,7 @@ public class StreamsEx1 {
         
 //    b. Convert a list of strings to uppercase and concatenate them into a single string.
         System.out.println(
-                StreamUtils.getStringsList().stream()
+                StreamUtils.getStringsListWithNull().stream()
                         .filter(StringUtils::isNoneBlank)
                         .map(String::toUpperCase)
                         .reduce("", String::concat) // identity - "", accumulator(a) - "", cs - Current String

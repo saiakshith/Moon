@@ -4,9 +4,6 @@ import com.enh.streams.StreamUtils;
 import com.enh.streams.data.Product;
 import org.apache.commons.lang3.StringUtils;
 
-import java.util.Objects;
-import java.util.function.BinaryOperator;
-
 //        Reduction and Aggregation:
 public class StreamsEx3 {
     public static void main(String[] args) {
@@ -26,7 +23,7 @@ public class StreamsEx3 {
         
 //        c. Concatenate a list of strings using reduce operation.
         System.out.println(
-                StreamUtils.getStringsList().stream()
+                StreamUtils.getStringsListWithNull().stream()
                         .filter(StringUtils::isNoneBlank)
                         .reduce(String::concat)
         );

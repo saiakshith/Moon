@@ -13,7 +13,7 @@ public class StreamsEx6 {
     public static void main(String[] args) {
 //    a. Filter out null values from a list of strings using streams.
         System.out.println(
-            StreamUtils.getStringsList().stream()
+            StreamUtils.getStringsListWithNull().stream()
                     .filter(StringUtils::isNoneBlank)
                     .collect(toList())
         );

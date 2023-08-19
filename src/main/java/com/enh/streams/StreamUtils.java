@@ -32,8 +32,12 @@ public class StreamUtils {
         return List.of(1.0, 2.0, 3.0, 4.0, 5.0);
     }
     
-    public static List<String> getStringsList() {
+    public static List<String> getStringsListWithNull() {
         return Arrays.asList("String-2", null, "String-3", null, "String-1");
+    }
+    
+    public static List<String> getStrings() {
+        return Arrays.asList("String-2", "String-3", "String-1");
     }
     
     public static List<String> getSentencesList() {
