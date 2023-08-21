@@ -1,0 +1,5 @@
+package com.enh.java.streams.enums;
+
+public enum Department {
+    BE_DEVELOPEMENT, FE_DEVELOPMENT, TECH_DESIGN, FEATURE_TESTING, TESTING, HR, FINANCIAL, ADMINISTRATOR;
+}
