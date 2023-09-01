@@ -1,8 +1,11 @@
 package com.enh.java.streams.exercises.akshith.beginner;
 
 import com.enh.java.streams.StreamUtils;
+import com.enh.java.streams.data.Person;
+import com.enh.java.streams.enums.Gender;
 import org.apache.commons.lang3.StringUtils;
 
+import java.util.Comparator;
 import java.util.Optional;
 
 import static java.util.stream.Collectors.toList;
@@ -27,5 +30,27 @@ public class StreamsEx6 {
                         .mapToInt(Integer::intValue)
                         .sum()
         );
+
+//        Find the average age of all male persons in the list.
+        System.out.println(
+                StreamUtils.getPersons().stream()
+                        .filter(p -> p.getGender() == Gender.MALE)
+                        .mapToInt(Person::getAge)
+                        .average().getAsDouble()
+        );
+        
+//        Find the names of all male persons who are older than 10 and sort them in alphabetical order.
+        System.out.println(
+                StreamUtils.getPersons().stream()
+                        .filter(p -> (p.getGender() == Gender.MALE) && (p.getAge() > 30))
+//                        .filter(p -> p.getGender() == Gender.MALE)
+//                        .filter(p -> p.getAge() > 10)
+                        .map(Person::getName)
+                        .sorted()
+                        .collect(toList())
+        );
+//        Create a new list containing the names of all persons whose names start with the letter "A."
+//        Determine whether there is at least one person with age less than 18 in the list.
+//        Count the total number of persons in the list.
     }
 }
