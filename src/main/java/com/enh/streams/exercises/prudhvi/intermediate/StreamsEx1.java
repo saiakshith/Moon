@@ -57,7 +57,7 @@ public class StreamsEx1 {
         System.out.println("Parallel string time : " + (endTime - startTime) + "ms");
 
         startTime = System.currentTimeMillis();
-        StreamUtils.strings().parallelStream()
+        StreamUtils.strings().stream()
                 .sequential()
                 .forEach(s -> {
                             try {
