@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class StreamsEx1 {
 
     public static void main(String[] args) {
-//    FlatMap:
+//  ###  FlatMap:
 //    a. Given a list of lists of integers, flatten it into a single list and print the result.
         System.out.println(
                 StreamUtils.getOrderedIntegers().stream()
@@ -22,7 +22,7 @@ public class StreamsEx1 {
                         .distinct()
                         .collect(Collectors.toList())
         );
-//        Parallel Streams:
+//    ###    Parallel Streams:
 //        a. Given a large list of integers, find the sum of all the numbers using parallel streams and compare the performance with sequential streams.
         long startTime = System.currentTimeMillis();
         System.out.println(
