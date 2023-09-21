@@ -23,5 +23,10 @@ public static void main(String[] args) {
             StreamUtils.getOrderedNumbers().stream()
                     .collect(Collectors.partitioningBy(i -> i % 2 == 0))
     );
+//    groupign the no of data
+    System.out.println(
+            StreamUtils.getOrderedNumbers().stream()
+                    .collect(Collectors.groupingBy(i -> i / 3))
+    );
     }
 }
