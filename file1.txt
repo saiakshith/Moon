@@ -3,6 +3,7 @@ Conflicting line from my feature/akshith/streams-practicals
 
 Non-Conflicting line from my feature/akshith/streams-practicals
 
+Add new line 1
 
 
 
@@ -13,6 +14,3 @@ Non-Conflicting line from my feature/akshith/streams-practicals
 
 
 
-
-New line in file1.txt 1
-New line in file1.txt 2
