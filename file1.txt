@@ -3,18 +3,11 @@ Conflicting line from my feature/akshith/streams-practicals
 
 Non-Conflicting line from my feature/akshith/streams-practicals
 
-Add new line 1
+Add new line 1n | Add new line 5
 
-Add new line 2
+Add new line 2 | Add new line 6
 
-Add new line 3
+Add new line 3 | Add new line 7
 
-Add new line 4
+Add new line 4 | Add new line 8
 
-Add new line 5
-
-Add new line 6
-
-Add new line 7
-
-Add new line 8
