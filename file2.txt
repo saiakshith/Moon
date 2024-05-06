@@ -1,3 +1,11 @@
 This line is added while creating the file -
 Conflicting line from feature/akshith/streams-practicals saiakshith@gmail.com
 Added second line in file2.txt
+
+
+
+
+
+New line in file2.txt 1
+New line in file2.txt 2
+New line in file2.txt 3
