@@ -5,12 +5,4 @@ Non-Conflicting line from my feature/akshith/streams-practicals
 
 Add new line 1
 
-
-
-
-
-
-
-
-
-
+Add new line 2
