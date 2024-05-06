@@ -1,4 +1,4 @@
 Conflicting line from my feature/akshith/streams-practicals
-
-
+Non-Conflicting line from my feature/akshith/streams-practicals 1 from Github dummysatest@gmail.com
+Non-Conflicting line from my feature/akshith/streams-practicals 2 from Github dummysatest@gmail.com
 Non-Conflicting line from my feature/akshith/streams-practicals
