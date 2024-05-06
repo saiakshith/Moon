@@ -1,3 +1,4 @@
 This line is added while creating the file -
-Non-Conflicting line from my feature/akshith/streams-practicals
+Conflicting line from feature/akshith/streams-practicals from GITHUB dummysatest@gmail.com
 Added second line in file2.txt
+Non-Conflicting line from feature/akshith/streams-practicals from GITHUB dummysatest@gmail.com
