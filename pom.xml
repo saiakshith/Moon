@@ -26,13 +26,15 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    
 
-    <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
     <dependency>
-      <groupId>commons-codec</groupId>
-      <artifactId>commons-codec</artifactId>
-      <version>1.15</version>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.12.0</version>
     </dependency>
+
 
   </dependencies>
 
@@ -76,8 +78,8 @@
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-compiler-plugin</artifactId>
               <configuration>
-                  <source>9</source>
-                  <target>9</target>
+                  <source>12</source>
+                  <target>12</target>
               </configuration>
           </plugin>
       </plugins>
