@@ -4,11 +4,11 @@ package com.enh.java.generics.data;
         The class should include methods push(), pop(), and isEmpty(). 
         Inside the class, use an ArrayList to hold the items on the stack.*/
 
-import com.enh.java.generics.data.interfaces.StackInterface;
+import com.enh.java.generics.data.interfaces.Collection;
 
 import java.util.Objects;
 
-public class Stack<E> implements StackInterface<E> {
+public class Stack<E> implements Collection<E> {
 
     private java.util.Stack<E> stack;
 
