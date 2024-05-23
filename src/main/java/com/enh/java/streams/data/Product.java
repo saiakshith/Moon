@@ -3,6 +3,7 @@ package com.enh.java.streams.data;
 import com.enh.java.streams.enums.Arrival;
 import com.enh.java.streams.enums.Brand;
 import com.enh.java.streams.enums.PaymentMode;
+import com.enh.java.streams.enums.ProductType;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -19,20 +20,9 @@ public class Product {
     private int sold;
     private int ratings;
     private PaymentMode paymentMode;
+    private ProductType type;
 
-    public Product(String code, String name, String description, BigDecimal price, List<Product> productReferences, boolean isSellable, Arrival arrival, Brand brand, int sold, int ratings, PaymentMode paymentMode) {
-        this.code = code;
-        this.name = name;
-        this.description = description;
-        this.price = price;
-        this.productReferences = productReferences;
-        this.isSellable = isSellable;
-        this.arrival = arrival;
-        this.brand = brand;
-        this.sold = sold;
-        this.ratings = ratings;
-        this.paymentMode = paymentMode;
-    }
+    public Product() {}
 
     @Override
     public String toString() {
@@ -48,6 +38,7 @@ public class Product {
                 ", sold=" + sold +
                 ", ratings=" + ratings +
                 ", paymentMode=" + paymentMode +
+                ", type=" + type +
                 '}';
     }
 
@@ -137,5 +128,13 @@ public class Product {
 
     public void setPaymentMode(PaymentMode paymentMode) {
         this.paymentMode = paymentMode;
+    }
+
+    public ProductType getType() {
+        return type;
+    }
+
+    public void setType(ProductType type) {
+        this.type = type;
     }
 }
