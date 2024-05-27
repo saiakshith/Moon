@@ -1,8 +1,10 @@
 package com.enh.java.design_patterns.singleton.test;
 
-import com.enh.java.design_patterns.singleton.SingletonEager;
-import com.enh.java.design_patterns.singleton.SingletonLazy;
-import com.enh.java.design_patterns.singleton.SingletonStaticBlock;
+import com.enh.java.design_patterns.singleton.DoubleCheckedLockingThreadSafeSingleton;
+import com.enh.java.design_patterns.singleton.EagerSingleton;
+import com.enh.java.design_patterns.singleton.LazySingleton;
+import com.enh.java.design_patterns.singleton.StaticBlockSingleton;
+import com.enh.java.design_patterns.singleton.ThreadSafeSingleton;
 
 public class SingletonTest {
     
@@ -13,33 +15,53 @@ public class SingletonTest {
     public static void main(String[] args) {
 //        testSingletonEager();
 //        testSingletonStaticBlock();
-        testSingletonLazy();
+//        testSingletonLazy();
+        testThreadSafeSingleton();
+        testDoubleCheckedLockingThreadSafeSingleton();
     }
 
-    private static void testSingletonLazy() {
-        SingletonLazy singletonLazy1 = SingletonLazy.getInstance();
-        SingletonLazy singletonLazy2 = SingletonLazy.getInstance();
+    private static void testDoubleCheckedLockingThreadSafeSingleton() {
+        DoubleCheckedLockingThreadSafeSingleton doubleCheckedLockingThreadSafeSingleton1 = DoubleCheckedLockingThreadSafeSingleton.getInstance();
+        DoubleCheckedLockingThreadSafeSingleton doubleCheckedLockingThreadSafeSingleton2 = DoubleCheckedLockingThreadSafeSingleton.getInstance();
         
-        log(singletonLazy1 == singletonLazy2);
-        log(singletonLazy1);
-        log(singletonLazy2);
+        log(doubleCheckedLockingThreadSafeSingleton1 == doubleCheckedLockingThreadSafeSingleton2);
+        log(doubleCheckedLockingThreadSafeSingleton1);
+        log(doubleCheckedLockingThreadSafeSingleton2);
+    }
+    
+    private static void testThreadSafeSingleton() {
+        ThreadSafeSingleton threadSafeSingleton1 = ThreadSafeSingleton.getInstance();
+        ThreadSafeSingleton threadSafeSingleton2 = ThreadSafeSingleton.getInstance();
+        
+        log(threadSafeSingleton1 == threadSafeSingleton2);
+        log(threadSafeSingleton1);
+        log(threadSafeSingleton2);
+    }
+    
+    private static void testSingletonLazy() {
+        LazySingleton lazySingleton1 = LazySingleton.getInstance();
+        LazySingleton lazySingleton2 = LazySingleton.getInstance();
+        
+        log(lazySingleton1 == lazySingleton2);
+        log(lazySingleton1);
+        log(lazySingleton2);
     }
     
     private static void testSingletonStaticBlock() {
-        SingletonStaticBlock singletonStaticBlock1 = SingletonStaticBlock.getInstance();
-        SingletonStaticBlock singletonStaticBlock2 = SingletonStaticBlock.getInstance();
+        StaticBlockSingleton staticBlockSingleton1 = StaticBlockSingleton.getInstance();
+        StaticBlockSingleton staticBlockSingleton2 = StaticBlockSingleton.getInstance();
 
-        log(singletonStaticBlock1 == singletonStaticBlock2);
-        log(singletonStaticBlock1);
-        log(singletonStaticBlock2);
+        log(staticBlockSingleton1 == staticBlockSingleton2);
+        log(staticBlockSingleton1);
+        log(staticBlockSingleton2);
     }
     
     private static void testSingletonEager() {
-        SingletonEager singletonEager1 = SingletonEager.getInstance();
-        SingletonEager singletonEager2 = SingletonEager.getInstance();
+        EagerSingleton eagerSingleton1 = EagerSingleton.getInstance();
+        EagerSingleton eagerSingleton2 = EagerSingleton.getInstance();
         
-        log(singletonEager1 == singletonEager2);
-        log(singletonEager1);
-        log(singletonEager2);
+        log(eagerSingleton1 == eagerSingleton2);
+        log(eagerSingleton1);
+        log(eagerSingleton2);
     }
 }
