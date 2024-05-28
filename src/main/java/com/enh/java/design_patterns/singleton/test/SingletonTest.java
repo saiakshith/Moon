@@ -1,5 +1,6 @@
 package com.enh.java.design_patterns.singleton.test;
 
+import com.enh.java.design_patterns.singleton.BillPughSingleton;
 import com.enh.java.design_patterns.singleton.DoubleCheckedLockingThreadSafeSingleton;
 import com.enh.java.design_patterns.singleton.EagerSingleton;
 import com.enh.java.design_patterns.singleton.LazySingleton;
@@ -16,8 +17,18 @@ public class SingletonTest {
 //        testSingletonEager();
 //        testSingletonStaticBlock();
 //        testSingletonLazy();
-        testThreadSafeSingleton();
-        testDoubleCheckedLockingThreadSafeSingleton();
+//        testThreadSafeSingleton();
+//        testDoubleCheckedLockingThreadSafeSingleton();
+        testBillPughSingleton();
+    }
+    
+    private static void testBillPughSingleton() {
+        BillPughSingleton billPughSingleton1 = BillPughSingleton.getInstance();
+        BillPughSingleton billPughSingleton2 = BillPughSingleton.getInstance();
+        
+        log(billPughSingleton1 == billPughSingleton2);
+        log(billPughSingleton1);
+        log(billPughSingleton2);
     }
 
     private static void testDoubleCheckedLockingThreadSafeSingleton() {
