@@ -4,7 +4,9 @@ import org.apache.commons.lang3.StringUtils;
 
 import static com.enh.java.util.PlaygroundUtil.log;
 
-public interface DefaultAndStaticMethodInterface {
+public interface DefaultAndStaticAndAbstractMethodInterface {
+    
+    String testAbstractMethod();
     
     default String testDefaultMethod() {
         log("Interface : Test DEFAULT Method.");
