@@ -1,4 +1,4 @@
-package com.enh.java.classes_interfaces;
+package com.enh.java.playground.classes_interfaces;
 
 public class CITest {
     public static void main(String[] args) {

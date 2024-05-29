@@ -1,9 +1,19 @@
-package com.enh.java.classes_interfaces;
+package com.enh.java.playground.java.test_classes;
 
 import java.util.Collections;
 import java.util.List;
 
 public class ClassB {
+    
+    private ClassA classA;
+
+    public static void main(String[] args) {
+        
+    }
+    
+    public void testMethod() {
+        classA.modifyCart();
+    }
     protected void returnVoid() {
         System.out.println("returnVoid ClassB");
     }
