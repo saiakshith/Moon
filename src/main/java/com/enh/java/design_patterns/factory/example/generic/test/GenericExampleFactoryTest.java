@@ -1,12 +1,12 @@
 package com.enh.java.design_patterns.factory.example.generic.test;
 
 import com.enh.java.design_patterns.factory.example.generic.Product;
-import com.enh.java.design_patterns.factory.example.generic.factory.AbstractProductFactory;
-import com.enh.java.design_patterns.factory.example.generic.factory.ProductFactory;
-import com.enh.java.design_patterns.factory.example.generic.factory.abstract_class_impl.ProductAAbstractFactoryImpl;
-import com.enh.java.design_patterns.factory.example.generic.factory.abstract_class_impl.ProductBAbstractFactoryImpl;
-import com.enh.java.design_patterns.factory.example.generic.factory.impl.ProductAFactoryImpl;
-import com.enh.java.design_patterns.factory.example.generic.factory.impl.ProductBFactoryImpl;
+import com.enh.java.design_patterns.factory.example.generic.factory.AbstractProductCreatorFactory;
+import com.enh.java.design_patterns.factory.example.generic.factory.ProductCreatorFactory;
+import com.enh.java.design_patterns.factory.example.generic.factory.abstract_class_impl.ProductAAbstractCreatorFactoryImpl;
+import com.enh.java.design_patterns.factory.example.generic.factory.abstract_class_impl.ProductBAbstractCreatorFactoryImpl;
+import com.enh.java.design_patterns.factory.example.generic.factory.impl.ProductACreatorFactoryImpl;
+import com.enh.java.design_patterns.factory.example.generic.factory.impl.ProductBCreatorFactoryImpl;
 
 public class GenericExampleFactoryTest {
     public static void main(String[] args) {
@@ -15,11 +15,11 @@ public class GenericExampleFactoryTest {
     }
     
     static void testProductFactory() {
-        ProductFactory abstractProductFactoryProductA = new ProductAFactoryImpl();
-        Product productA = abstractProductFactoryProductA.factoryMethod();
+        ProductCreatorFactory productAFactory = new ProductACreatorFactoryImpl();
+        Product productA = productAFactory.factoryMethod();
 
-        ProductFactory abstractProductFactoryProductB = new ProductBFactoryImpl();
-        Product productB = abstractProductFactoryProductB.factoryMethod();
+        ProductCreatorFactory productBFactory = new ProductBCreatorFactoryImpl();
+        Product productB = productBFactory.factoryMethod();
 
         productA.display();
         productB.display();
@@ -27,11 +27,11 @@ public class GenericExampleFactoryTest {
     
     
     static void testAbstracProductFactory() {
-        AbstractProductFactory abstractProductFactoryProductA = new ProductAAbstractFactoryImpl();
-        Product productA = abstractProductFactoryProductA.factoryMethod();
+        AbstractProductCreatorFactory productAFactory = new ProductAAbstractCreatorFactoryImpl();
+        Product productA = productAFactory.factoryMethod();
 
-        AbstractProductFactory abstractProductFactoryProductB = new ProductBAbstractFactoryImpl();
-        Product productB = abstractProductFactoryProductB.factoryMethod();
+        AbstractProductCreatorFactory productBFactory = new ProductBAbstractCreatorFactoryImpl();
+        Product productB = productBFactory.factoryMethod();
 
         productA.display();
         productB.display();

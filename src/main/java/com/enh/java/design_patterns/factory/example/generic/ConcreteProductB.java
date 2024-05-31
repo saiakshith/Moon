@@ -2,9 +2,9 @@ package com.enh.java.design_patterns.factory.example.generic;
 
 import static com.enh.java.util.PlaygroundUtil.log;
 
-public class ProductB implements Product {
+public class ConcreteProductB implements Product {
     @Override
     public void display() {
-        log("This is a class of type : " + ProductB.class);
+        log("This is a class of type : " + ConcreteProductB.class);
     }
 }
