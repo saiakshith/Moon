@@ -1,13 +1,13 @@
-package com.enh.java.test;
+package com.playground.test;
 
 import com.playground.java.interfaces.DefaultAndStaticAndAbstractMethodInterface;
 import com.playground.java.interfaces.DefaultAndStaticAndAbstractMethodInterfaceImpl;
 
-public class GlobalTest {
+public class InterfaceTest {
+
     public static void main(String[] args) {
         DefaultAndStaticAndAbstractMethodInterfaceImpl defaultAndStaticMethodInterface = new DefaultAndStaticAndAbstractMethodInterfaceImpl();
 //        defaultAndStaticMethodInterface.testDefaultMethod();
-//        defaultAndStaticMethodInterface.testAbstractMethod();
 //        DefaultAndStaticAndAbstractMethodInterface.testStaticMethod();
         
         defaultAndStaticMethodInterface.testDotSuperOnInterface();
