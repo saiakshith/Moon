@@ -68,6 +68,7 @@ public class ProductBuilder {
     public ProductBuilder withPaymentMode(final PaymentMode paymentMode) {
         self.product.setPaymentMode(paymentMode);
         return self;
+//        return this; // This is fine as well, but for readability purpose use self.
     }
     
     public ProductBuilder withType(final ProductType type) {
@@ -77,6 +78,6 @@ public class ProductBuilder {
     
     public Product build() {
         return self.product;
-//        return this.product;
+//        return this.product; // This is fine as well, but for readability purpose use self.product.
     }
 }

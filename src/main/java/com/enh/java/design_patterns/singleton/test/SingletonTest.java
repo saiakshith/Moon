@@ -7,11 +7,9 @@ import com.enh.java.design_patterns.singleton.LazySingleton;
 import com.enh.java.design_patterns.singleton.StaticBlockSingleton;
 import com.enh.java.design_patterns.singleton.ThreadSafeSingleton;
 
+import static com.enh.java.util.PlaygroundUtil.log;
+
 public class SingletonTest {
-    
-    public static void log(Object object) {
-        System.out.println(object);
-    }
 
     public static void main(String[] args) {
 //        testSingletonEager();
