@@ -4,7 +4,11 @@ import com.playground.Account;
 
 import java.lang.reflect.Array;
 import java.math.BigDecimal;
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 public class PlaygroundTest {
@@ -18,10 +22,15 @@ public class PlaygroundTest {
         List<String> superList = List.of("sai", "ravi", "akhil");
         List<String> subList1 = List.of("sai", "ravi");
         List<String> subList2 = List.of("sai", "veera");
+
+        Map<String, String> map = new HashMap<>();
+        map.put("key", "value");
+        map.put("name", "person");
         
-        log(superList.contains("sai"));
-        log(superList.containsAll(subList1));
-        log(superList.containsAll(subList2));
+        Instant instant = Instant.now();
+        
+        log(instant);
+        log(LocalDateTime.now());
     }
 }
 
