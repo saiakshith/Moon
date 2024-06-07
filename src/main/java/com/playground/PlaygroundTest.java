@@ -1,6 +1,5 @@
-package com.playground.test;
+package com.playground;
 
-import com.playground.Account;
 
 import java.lang.reflect.Array;
 import java.math.BigDecimal;

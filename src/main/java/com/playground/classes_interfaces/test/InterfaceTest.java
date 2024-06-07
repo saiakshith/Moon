@@ -1,4 +1,4 @@
-package com.playground.test;
+package com.playground.classes_interfaces.test;
 
 import com.playground.java.interfaces.DefaultAndStaticAndAbstractMethodInterface;
 import com.playground.java.interfaces.DefaultAndStaticAndAbstractMethodInterfaceImpl;
