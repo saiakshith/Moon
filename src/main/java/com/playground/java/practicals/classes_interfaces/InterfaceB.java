@@ -1,4 +1,4 @@
-package com.enh.java.classes_interfaces;
+package com.playground.java.practicals.classes_interfaces;
 
 public interface InterfaceB extends InterfaceA {
 //public interface InterfaceB {

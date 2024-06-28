@@ -1,4 +1,4 @@
-package com.enh.java.classes_interfaces;
+package com.playground.java.practicals.classes_interfaces;
 
 public class InterfaceImpl implements InterfaceA, InterfaceB, InterfaceC {
 }

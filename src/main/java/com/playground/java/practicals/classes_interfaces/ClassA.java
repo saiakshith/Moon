@@ -1,7 +1,4 @@
-package com.enh.java.classes_interfaces;
-
-import java.util.Collections;
-import java.util.List;
+package com.playground.java.practicals.classes_interfaces;
 
 public class ClassA extends ClassB {
 

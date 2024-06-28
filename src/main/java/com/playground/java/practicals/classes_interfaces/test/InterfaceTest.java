@@ -1,0 +1,14 @@
+package com.playground.java.practicals.classes_interfaces.test;
+
+import com.playground.java.practicals.interfaces.DefaultAndStaticAndAbstractMethodInterfaceImpl;
+
+public class InterfaceTest {
+
+    public static void main(String[] args) {
+        DefaultAndStaticAndAbstractMethodInterfaceImpl defaultAndStaticMethodInterface = new DefaultAndStaticAndAbstractMethodInterfaceImpl();
+//        defaultAndStaticMethodInterface.testDefaultMethod();
+//        DefaultAndStaticAndAbstractMethodInterface.testStaticMethod();
+        
+        defaultAndStaticMethodInterface.testDotSuperOnInterface();
+    }
+}
