@@ -1,4 +1,4 @@
-package com.playground.classes_interfaces;
+package com.playground.java.practicals.classes_interfaces;
 
 import java.util.Collections;
 import java.util.List;

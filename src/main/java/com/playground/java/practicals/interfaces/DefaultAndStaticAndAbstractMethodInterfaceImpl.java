@@ -1,4 +1,4 @@
-package com.playground.java.interfaces;
+package com.playground.java.practicals.interfaces;
 
 import org.apache.commons.lang3.StringUtils;
 
