@@ -1,7 +1,7 @@
-package com.playground.java.practicals.classes_interfaces;
+package com.enh.java.fundamentals.classes_interfaces;
 
 //public interface InterfaceC extends InterfaceA {
-public interface InterfaceC extends InterfaceB {
+public interface InterfaceC {
 //public interface InterfaceC {
     default void methodA() {
         System.out.println("Mehotd A " + InterfaceC.class);

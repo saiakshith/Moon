@@ -1,4 +1,4 @@
-package com.playground.java.practicals.class_loading;
+package com.enh.java.fundamentals.class_loading;
 
 import org.apache.commons.lang3.StringUtils;
 

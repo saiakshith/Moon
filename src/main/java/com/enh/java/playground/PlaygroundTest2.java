@@ -1,4 +1,4 @@
-package com.playground.test;
+package com.enh.java.playground;
 
 public class PlaygroundTest2 {
     public static void main(String[] args) {

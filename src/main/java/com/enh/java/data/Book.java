@@ -1,4 +1,4 @@
-package com.playground.java.data;
+package com.enh.java.data;
 
 import java.util.ArrayList;
 import java.util.List;

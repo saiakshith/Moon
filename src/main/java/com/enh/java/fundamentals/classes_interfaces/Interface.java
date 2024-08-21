@@ -1,4 +1,4 @@
-package com.playground.java.practicals.classes_interfaces;
+package com.enh.java.fundamentals.classes_interfaces;
 
 import java.util.List;
 

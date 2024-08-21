@@ -1,4 +1,4 @@
-package com.playground.java.practicals.inheritance;
+package com.enh.java.fundamentals.inheritance;
 
 public class Parent {
     

@@ -1,6 +1,6 @@
-package com.playground.java.practicals.classes_interfaces.test;
+package com.enh.java.fundamentals.classes_interfaces.test;
 
-import com.playground.java.practicals.class_loading.OuterClass;
+import com.enh.java.fundamentals.class_loading.OuterClass;
 
 public class JavaClassLoadingTest {
     public static void main(String[] args) {

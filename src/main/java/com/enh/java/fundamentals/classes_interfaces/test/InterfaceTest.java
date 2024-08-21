@@ -1,6 +1,6 @@
-package com.playground.java.practicals.classes_interfaces.test;
+package com.enh.java.fundamentals.classes_interfaces.test;
 
-import com.playground.java.practicals.interfaces.DefaultAndStaticAndAbstractMethodInterfaceImpl;
+import com.enh.java.fundamentals.interfaces.DefaultAndStaticAndAbstractMethodInterfaceImpl;
 
 public class InterfaceTest {
 

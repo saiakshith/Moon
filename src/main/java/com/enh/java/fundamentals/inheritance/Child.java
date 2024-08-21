@@ -1,4 +1,4 @@
-package com.playground.java.practicals.inheritance;
+package com.enh.java.fundamentals.inheritance;
 
 import static com.enh.java.util.PlaygroundUtil.log;
 
