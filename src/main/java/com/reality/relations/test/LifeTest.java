@@ -1,17 +1,20 @@
 package com.reality.relations.test;
 
+import org.apache.commons.codec.binary.StringUtils;
+import org.apache.commons.lang.BooleanUtils;
+
+import javax.sql.rowset.serial.SQLOutputImpl;
+import java.util.HashMap;
+import java.util.Map;
+
 public class LifeTest {
     public static void main(String[] args) {
-        System.out.println("hello world 1");
-
-        System.out.println("Special line by akshith.");
-        System.out.println("hello world 2");
-
-        System.out.println("hello world 3");
-        System.out.println("hello world 4");
-
-        System.out.println("Line 2 added by akshith");
-
-        System.out.println("hello world 5");
+        
+        Map<String, String> map = new HashMap<>();
+        map.put("me", "y");
+        
+        
+        System.out.println(BooleanUtils.toBoolean(map.get("me")));
     }
+    
 }
